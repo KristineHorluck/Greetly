@@ -1,0 +1,15 @@
+.panel {
+    display: flex;
+}
+
+.left-panel {
+    width: 316px;
+    height: 609px;
+    background-color: #fbfbfb;
+}
+
+.right-panel {
+    flex-grow: 1;
+    height: 1624px;
+    background-color: #fbfbfb;
+}

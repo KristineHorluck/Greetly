@@ -1,0 +1,22 @@
+.footer {
+    position: bottom;
+    background-color: #fbfbfb;
+    text-align: center;
+    padding: 10px;
+  }
+
+.footer-info-right,
+.footer-info-left {
+    padding: 10px;
+    border-left: 1px solid #31572C;
+    height: 100%;
+    display: inline-flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 01;
+    padding: 0;
+    overflow: hidden;
+
+}
