@@ -9,7 +9,7 @@
 }
 
 .right-panel {
-    flex-grow: 1;
+    flex-grow: 100;
     height: 1624px;
     background-color: #fbfbfb;
 }
