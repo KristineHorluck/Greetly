@@ -18,5 +18,5 @@ export const routes: Routes = [
     {'path': 'contact', component:ContactComponent},
     {'path': 'FAQ', component:FAQComponent},
     {'path': 'politics', component:PoliticsComponent},
-    {'path': 'rules', component:RulesComponent},
+    {'path': 'rules', component:RulesComponent},  
 ];
