@@ -19,4 +19,5 @@ export const routes: Routes = [
     {'path': 'FAQ', component:FAQComponent},
     {'path': 'politics', component:PoliticsComponent},
     {'path': 'rules', component:RulesComponent},  
+    
 ];
