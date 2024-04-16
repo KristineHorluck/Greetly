@@ -1,5 +1,7 @@
 .footer {
-    position: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     border-top: 1px solid #31572C;
     background-color: #ff0000;
     text-align: center;
@@ -17,7 +19,8 @@
 
 ul {
     list-style-type: none;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin: 01;
+    padding: 0;
+    overflow: hidden;
+
 }
