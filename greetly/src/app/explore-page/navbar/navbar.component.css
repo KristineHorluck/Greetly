@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     margin-left: 10px;
+    justify-content:space-between 10px;
 }
 }
 
