@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
+import {MatButtonModule} from '@angular/material/button';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './explore-page/navbar/navbar.component';
@@ -12,7 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet],
+  imports: [CommonModule, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
