@@ -9,11 +9,12 @@ import { PanelLeftComponent } from './explore-page/panels/panel-left/panel-left.
 import { PanelRightComponent } from './explore-page/panels/panel-right/panel-right.component';
 import { ScrollBarComponent } from './explore-page/panels/panel-left/scroll-bar/scroll-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutMeComponent } from './profile-page/my-page/about-me/about-me.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet],
+  imports: [CommonModule, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet, AboutMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
