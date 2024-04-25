@@ -8,15 +8,18 @@ import { ContactComponent } from './Blackbox/contact/contact.component';
 import { FAQComponent } from './Blackbox/faq/faq.component';
 import { PoliticsComponent } from './Blackbox/politics/politics.component';
 import { RulesComponent } from './Blackbox/rules/rules.component';
+import { AboutMeComponent } from './profile-page/my-page/about-me/about-me.component';
 
 export const routes: Routes = [
-    {'path': 'chat', component:ChatComponent},
-    {'path': 'profile', component:ProfilePageComponent},
-    {'path': 'favourites', component:FavouritesComponent},
-    {'path': '', component:ExplorePageComponent},
-    {'path': 'about us', component:AboutUsComponent},
-    {'path': 'contact', component:ContactComponent},
-    {'path': 'FAQ', component:FAQComponent},
-    {'path': 'politics', component:PoliticsComponent},
-    {'path': 'rules', component:RulesComponent},  
+    {path:"", redirectTo: "/explore page", pathMatch:'full'},
+    {path: 'chat', component:ChatComponent},
+    {path: 'profile', component:ProfilePageComponent},
+    {path: 'favourites', component:FavouritesComponent},
+    {path: 'explore page', component:ExplorePageComponent},
+    {path: 'about us', component:AboutUsComponent},
+    {path: 'contact', component:ContactComponent},
+    {path: 'FAQ', component:FAQComponent},
+    {path: 'politics', component:PoliticsComponent},
+    {path: 'rules', component:RulesComponent},  
+    {path: 'About me', component: AboutUsComponent}
 ];
