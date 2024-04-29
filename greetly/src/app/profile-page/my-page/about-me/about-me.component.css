@@ -1,73 +1,62 @@
 body {
-    margin: 40px;
-  }
-
-  .sidebar {
-    grid-area: sidebar;
-  }
-
-  .sidebar2 {
-    grid-area: sidebar2;
-  }
-
-  .sidebar3 {
-    grid-area: sidebar3;
-  }
-
-  .content {
-    grid-area: content;
-    position: relative;
+    margin: 10px;
   }
   
-  .header {
-    grid-area: header;
-  }
-  
-  .footer {
-    grid-area: footer;
-  }
-  
-  .wrapper {
-      display: grid;
-      grid-gap: 50px;
-      grid-template-columns: 410px 410 px 410 px;
-      grid-template-areas:
-      "header"
-      "sidebar"
-      "sidebar2"
-      "sidebar3"
-      "footer";
-      background-color: #fff;
-      color: #444;
-    }
-  
-  
-  .box {
-    background-color: #e7e7e7;
-    color: black;
-    border-radius: 5px;
-    padding: 100px;
-    font-size: 150%;
-  }
-  
-  .header {
-    background-color: #e7e7e7;
+  .boxHeader {
+    background-color: #d1c7c7;
+    box-sizing: content-box;
+    height: 130px;
+    margin-top: 5%;
+    padding: 0% 45px;
+    padding-bottom: 40% 10px;
+    font-size: 40px ;
+    font: bold;
   }
 
-  .sidebar {
-    background-color: #e7e7e7;
+  .textUnderBoxH {
+    background-color: #d1c7c7;
+    box-sizing: content-box;
+    height: 10px;
+    padding-bottom: 15%;
+    padding: 0% 45px;
+    margin-top: -88px;
+    font-size: 20px ;
+    font-style: italic;
   }
 
-  .sidebar2 {
+  .boxUnderH {
     background-color: #e7e7e7;
+    box-sizing: content-box;
+    height: 40px;
+    width: 523px;
+    margin-top: 10%;
+    padding: 0% 45px;
+
   }
 
-  .sidebar3 {
+  .boxSidebar {
     background-color: #e7e7e7;
+    box-sizing: content-box;
+    height: 50px;
+    margin-top: 5%;
+    padding: 0% 45px;
   }
 
-  .footer {
+  .boxSidebar2 {
     background-color: #e7e7e7;
+    box-sizing: content-box;
+    height: 50px;
+    margin-top: 5%;
+    padding: 0% 45px;
   }
+
+  .boxSidebar3 {
+    background-color: #e7e7e7;
+    box-sizing: content-box;
+    height: 50px;
+    margin-top: 5%;
+    
+  }
+
   
  
