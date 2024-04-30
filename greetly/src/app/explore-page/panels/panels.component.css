@@ -6,54 +6,115 @@
     grid-row-start: 1;
     grid-row-end: 2;
     grid-template-columns:322px auto;
-    grid-template-rows: 80px 200px;
+    grid-template-rows: 100px 450px; /* change rows to move footer*/
     column-gap: 20px;
 }
 
 .left-panel {
-    height: 280px;
-    background-color: #e7bcbc;
+    height: 450px;
+    background-color: #fbfbfb;
     border-radius: 10px;
 } 
 
 .right-panel {
-    height: 280px;
+    height: 450px;
     background-color: #afafaf;
 }
 
 .begivenheder {
-    padding: 5px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 36px;
 }
 
 .search {
-    /* --padding allows to change padding for all paddings at once */
-    --padding: 5px; 
+
     width: max-content;
     display: flex;
     align-items: center;
-    padding: var(--padding);
     border-radius: 30px;
     background-color: rgb(221, 226, 219);
     width: 283px;
-    
+    height: 27px;
+    box-sizing: border-box;
+    height: 27px; /* Ensure this is enough after padding is considered */
+    padding: 10px; /* Example padding that fits within the height */
 }
 
-
-
 .search-input {
-    font-size: 10px;
+    font-size: 13px;
     font-style: italic;
     font-family: 'Calibri', sans-serif;
     color: rgb(129, 133, 130);
-    margin-left: var(--padding);
     outline: none;
     border: none;
     background-color: transparent;
     width: 283px;
+    height: 27px;
+    box-sizing: border-box;
+    height: 27px; /* Ensure this is enough after padding is considered */
+    padding: 10px; /* Example padding that fits within the height */
 }
 
 /* added left marging because padding-left didn't work */
 .left-panel .search {
-    margin-left: 5px;  
+    margin-left: 10px;  
 }
+
+.categories{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 24px;
+    color: #3e3e3e;
+    height: 245px;
+}
+
+.create-button{
+    padding-left: 10px;
+}
+
+.create-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 283px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 0; /* Ensure padding doesn't affect inner link */
+    background-color: #31572C; /* Background color on the container */
+    color: #fbfbfb;
+    
+}
+
+.create-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%; /* Ensure the link covers the entire container area */
+    height: 100%; /* Ensure the link covers the entire container area */
+    color: inherit; /* Optional: Inherits the text color from the parent */
+    text-decoration: none; /* Optional: Removes underline from links */
+    font-size: 20px;
+}
+
+.left-panel .create-button{
+    display: flex;
+    flex-direction: column; /* Stack children elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding-left: 10px;
+    margin-left: 10px; 
+    margin-top: 15px; 
+}
+
+.category-buttons{
+    padding-top: 5px;
+}
+
+
+
+
+
+
