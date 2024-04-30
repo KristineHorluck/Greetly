@@ -1,15 +1,20 @@
 .panel {
-    display: flex;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns:322px auto;
+    grid-template-rows: 80px 200px;
+    column-gap: 20px;
 }
 
 .left-panel {
-    width: 316px;
-    height: 609px;
-    background-color: #fbfbfb;
+    height: 280px;
+    background-color: #e7bcbc;
 }
 
 .right-panel {
-    flex-grow: 1;
-    height: 1624px;
-    background-color: #fbfbfb;
+    height: 280px;
+    background-color: #afafaf;
 }
+
+
