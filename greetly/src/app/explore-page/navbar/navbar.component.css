@@ -1,36 +1,31 @@
-
-
-/* Navbar container */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar-container{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: 200px auto 100px;
+    padding: 15px;
     background-color: #fbfbfb;
-    padding: 20px;
-
 }
 
-/* Links */
-.navbar-links {
-    display: flex;
-    align-items: center;
-    }
+.item1 {
+    align-content: center;   
+}
 
-    .navbar-links .icon{
-        margin-right: 30px;
-        }
-    
-    .navbar-links-notification .icon{
-        margin-right: 30px;
-        }
+.item2 {
+    align-content: center;
+    text-align: right;
+    margin-right: 10px;
+}
 
-     .navbar-links-chat .icon{
-        margin-right: 10px;
-         }
+.item2 .icon {
+    margin-right: 10px; 
+}
 
-     .navbar-links-favourites .icon{
-         margin-right: 10px;
-         }
+.item3{
+    align-content: center;
+    margin-left: 10px;
+}
+
          
     
     
