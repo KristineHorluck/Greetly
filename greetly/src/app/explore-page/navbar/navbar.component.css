@@ -1,21 +1,38 @@
-
-
-/* Navbar container */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* General styling for the navigation bar container */
+.navbar-container{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns: 200px auto 100px;
+    padding: 15px;
     background-color: #fbfbfb;
-    padding: 20px;
-
-    /* Links */
-    .navbar-links {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    justify-content:space-between 10px;
-    }
-    
 }
+
+/* Styling for the logo container (item1) */
+.item1 {
+    align-content: center;   
+}
+
+/* Styling for the navigation icons container (item2) */
+.item2 {
+    align-content: center;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Styling for each icon within the navigation icons container */
+.item2 .icon {
+    margin-right: 10px; 
+}
+
+/* Styling for the profile icon container (item3) */
+.item3{
+    align-content: center;
+    margin-left: 10px;
+}
+
+         
+    
+    
 
 
