@@ -9,24 +9,24 @@
 }
 
 /* Styling for the logo container (item1) */
-.item1 {
+.nav-logo {
     align-content: center;   
 }
 
 /* Styling for the navigation icons container (item2) */
-.item2 {
+.nav-buttons {
     align-content: center;
     text-align: right;
     margin-right: 10px;
 }
 
 /* Styling for each icon within the navigation icons container */
-.item2 .icon {
+.nav-buttons .icon {
     margin-right: 10px; 
 }
 
 /* Styling for the profile icon container (item3) */
-.item3{
+.nav-profile{
     align-content: center;
     margin-left: 10px;
 }
