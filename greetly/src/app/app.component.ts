@@ -9,6 +9,7 @@ import { PanelRightComponent } from './explore-page/panels/panel-right/panel-rig
 import { ScrollBarComponent } from './explore-page/panels/panel-left/scroll-bar/scroll-bar.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

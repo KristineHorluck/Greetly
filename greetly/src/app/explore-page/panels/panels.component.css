@@ -1,4 +1,7 @@
 .panel {
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 10px;
     display: grid;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -10,11 +13,47 @@
 .left-panel {
     height: 280px;
     background-color: #e7bcbc;
-}
+    border-radius: 10px;
+} 
 
 .right-panel {
     height: 280px;
     background-color: #afafaf;
 }
 
+.begivenheder {
+    padding: 5px;
+    font-size: 20px;
+}
 
+.search {
+    /* --padding allows to change padding for all paddings at once */
+    --padding: 5px; 
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 30px;
+    background-color: rgb(221, 226, 219);
+    width: 283px;
+    
+}
+
+
+
+.search-input {
+    font-size: 10px;
+    font-style: italic;
+    font-family: 'Calibri', sans-serif;
+    color: rgb(129, 133, 130);
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 283px;
+}
+
+/* added left marging because padding-left didn't work */
+.left-panel .search {
+    margin-left: 5px;  
+}

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './panels.component.css'
 })
 export class PanelsComponent {
-
+  term: any;
 }
