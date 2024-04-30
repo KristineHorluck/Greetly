@@ -8,14 +8,31 @@
     background-color: #fbfbfb;
     padding: 20px;
 
-    /* Links */
-    .navbar-links {
+}
+
+/* Links */
+.navbar-links {
     display: flex;
     align-items: center;
-    margin-left: 10px;
-    justify-content:space-between 10px;
     }
+
+    .navbar-links .icon{
+        margin-right: 30px;
+        }
     
-}
+    .navbar-links-notification .icon{
+        margin-right: 30px;
+        }
+
+     .navbar-links-chat .icon{
+        margin-right: 10px;
+         }
+
+     .navbar-links-favourites .icon{
+         margin-right: 10px;
+         }
+         
+    
+    
 
 
