@@ -6,6 +6,7 @@
 <title>Login page</title>
 </head>
 <body>
+
 <div class="flex-container">
   <div class="img-container">
     <img src="assets/greetly-logo-big.png" alt="logo" style="width: 350px; height: auto;">
@@ -19,12 +20,18 @@
         <input type="checkbox" checked="checked" name="remember"> Husk mig
       </label>
     <label style="display: block; border-bottom: 1px solid black;"></label>
+
     <!-- opret bruger knap -->
     <button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 8px; background-color: #31572C; width: 50%;">Opret bruger</button>
     <span class="psw">Glemt <a href="#">adgangskode?</a></span>
   </form>
 </div>
+
 <img src="assets/step-by-step.png" alt="step-by-step" style="width: 70%; display: block; margin: 0 auto; padding-bottom: 50px;">
+
+<img src="assets/step-by-step.png" alt="step-by-step" style="width: 70%; display: block; margin: 0 auto; padding-bottom: 50px;">
+
+>>>>>>> Stashed changes
 <!-- opret bruger pop-up -->
 <div id="id01" class="modal">
   <div class="flex-container" style="padding-bottom: 200px;">
@@ -38,9 +45,11 @@
       <input type="password" placeholder="Kodeord" name="psw" required>
       <input type="password" placeholder="Kodeord" name="psw-repeat" required>
       <input type="date" style="padding: 8px; width: 93.5%; margin-top: 10px;">  <!-- styling er ikke optimal -->
+
     <div style="display: flex; align-items: center; margin-top: 15px"> <!-- checkbox køn -->
       <input type="checkbox" > Kvinde
-      <input type="checkbox" style="padding: 10px;"> Mand
+      <input type="checkbox" > Mand
+
      </div>
       
       <div class="clearfix">  <!-- rydder op på floating elements -->
@@ -48,6 +57,7 @@
         <button type="submit" class="signupbtn" style="margin-bottom: 15px; margin-top: 10px;">Opret bruger</button>
   <!-- horizontal linje -->
         <label style="display: block; border-bottom: 1px solid black;"></label>
+        
   <!-- Har du allerede en konto? knap -->
       <div class="botton-container">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" style="opacity: 0.7;" class="cancelbtn">Har du allerede et login?</button>

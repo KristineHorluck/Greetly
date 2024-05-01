@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-import { LoginPageComponent } from './login-page/login-page.component';
 import { ChatComponent } from './chat/chat.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { FavouritesComponent } from './favourites/favourites.component';
@@ -9,6 +8,9 @@ import { ContactComponent } from './Blackbox/contact/contact.component';
 import { FAQComponent } from './Blackbox/faq/faq.component';
 import { PoliticsComponent } from './Blackbox/politics/politics.component';
 import { RulesComponent } from './Blackbox/rules/rules.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+
+
 
 export const routes: Routes = [
     {'path': 'chat', component:ChatComponent},
@@ -20,5 +22,5 @@ export const routes: Routes = [
     {'path': 'FAQ', component:FAQComponent},
     {'path': 'politics', component:PoliticsComponent},
     {'path': 'rules', component:RulesComponent},  
-    {'path': 'login', component:LoginPageComponent}
+    {'path': 'login', component:LoginPageComponent},
 ];
