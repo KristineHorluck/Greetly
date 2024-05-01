@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { LoginPageComponent } from './login-page/login-page.component';
 import { ChatComponent } from './chat/chat.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { FavouritesComponent } from './favourites/favourites.component';
@@ -19,4 +20,5 @@ export const routes: Routes = [
     {'path': 'FAQ', component:FAQComponent},
     {'path': 'politics', component:PoliticsComponent},
     {'path': 'rules', component:RulesComponent},  
+    {'path': 'login', component:LoginPageComponent}
 ];
