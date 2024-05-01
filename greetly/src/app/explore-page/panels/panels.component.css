@@ -1,13 +1,13 @@
 .panel {
     padding-left: 15px;
     padding-right: 30px;
-    padding-top: 10px;
+    padding-top: 17px;
     display: grid;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-template-columns:322px auto;
     grid-template-rows: 100px 450px; /* change rows to move footer*/
-    column-gap: 20px;
+    column-gap: 45px;
 }
 
 .left-panel {
@@ -17,8 +17,13 @@
 } 
 
 .right-panel {
-    height: 450px;
+    height: 445px;
+    width: 1010px;
     background-color: #afafaf;
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Calibri', sans-serif;
+    border-radius: 10px;
 }
 
 .begivenheder {
@@ -113,7 +118,37 @@
     padding-top: 5px;
 }
 
+.your-events {
+    padding-left: 14px;
+    padding-top: 16px;
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns:875px;
+    grid-template-rows:108px 108px 108px; 
+    column-gap: 20px;
+    background-color:aqua;
+}
 
+.your-events {
+    row-gap: 10px;
+}
+
+.attending {
+    background-color: #fbfbfb;
+}
+
+.favourites {
+    background-color: #fbfbfb;
+}
+
+.organizer {
+    background-color: #fbfbfb;
+}
 
 
 
