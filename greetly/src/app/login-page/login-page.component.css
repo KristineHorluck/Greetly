@@ -1,0 +1,93 @@
+
+label {
+    display: block; /* Viser label som et blokelement */
+    text-align: center; /* Venstrestiller teksten i label */
+    margin-bottom: 5px; /* Afstand under label */ }
+
+.psw {
+  display: block; /* Ændrer til blok for at stå på sin egen linje */
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flexbox styles for form and image container */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* login container styles */
+.container {
+  width: 100%;
+  background-color: #FBFBFB;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 12px; /* runde hjørner */
+  padding: 20px;
+  margin-left: 40px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* drop shadow */
+}
+
+/* Input and button styles */
+input[type=text], input[type=password], button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #31572C; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+/* opret bruger pop-up styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 50px;
+}
+
+.modal-content {
+  background-color: #FBFBFB;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  width: 25%;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
