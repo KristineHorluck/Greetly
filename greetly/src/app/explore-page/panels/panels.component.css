@@ -13,7 +13,7 @@
 .left-panel {
     height: 450px;
     background-color: #fbfbfb;
-    border-radius: 10px;
+    border-radius: 7px;
 } 
 
 .right-panel {
@@ -23,7 +23,7 @@
     padding: 20px;
     font-size: 24px;
     font-family: 'Calibri', sans-serif;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .begivenheder {
@@ -120,7 +120,7 @@
 
 .your-events {
     padding-left: 14px;
-    padding-top: 16px;
+    margin-top: 16px;
     font-size: 20px;
     font-family: 'Calibri', sans-serif;
     display: grid;
@@ -132,6 +132,7 @@
     grid-template-rows:108px 108px 108px; 
     column-gap: 20px;
     background-color:aqua;
+    height: 362px;
 }
 
 .your-events {
@@ -142,6 +143,11 @@
     background-color: #fbfbfb;
 }
 
+.pic{
+    width: 154px;
+    height: 108px;
+}
+
 .favourites {
     background-color: #fbfbfb;
 }
@@ -150,6 +156,55 @@
     background-color: #fbfbfb;
 }
 
+.attending, .favourites, .organizer {
+    background-color: #fbfbfb;
+    height: 100%; /* Ensuring each grid item fills the row height */
+}
 
+.attending, .favourites, .organizer {
+    display: grid;
+    grid-template-columns: 154px auto;  /* fixed width for the image, flexible space for the box */
+    gap: 27px;  /* Spacing between the image and the box */
+    align-items: start;  /* Align items at the start of the grid container */
+    background-color: #fbfbfb;
+}
 
+.attending-pic, .favourites-pic, .organizer-pic {
+    width: 154px; /* fixed width matching grid column */
+    height: 108px; /* specified height */
+}
 
+.attending-box, .favourites-box, .organizer-box {
+    display: grid;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 88px; /* Use full width of the grid column */
+    height: 21px; /* Exact height */
+    background-color: #31572C;
+    color: #fbfbfb;
+    border-radius: 7px;
+    grid-column: 2; /* Explicitly place in the second column */
+}
+
+.event-box-text {
+    font-size: 12px; /* Text styling */
+}
+
+.date {
+    padding-top: 7px;
+    font-size: 7px;
+    color: #717171;
+}
+
+.event-discription{
+    padding-top: 14px;
+    font-size: 14px;
+    color: #393939;
+    font
+}
+
+.address {
+    padding-top: 8px;
+    font-size: 8px;
+    color: #393939;
+}
