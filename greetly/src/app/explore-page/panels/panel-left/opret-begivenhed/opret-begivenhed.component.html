@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>opret begivenhed page</title>
+
+</head>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 8px; background-color: #31572C; width: 50%;">Opret bruger</button>
+<div id="id01" class="modal">
+  <div class="flex-container" style="padding-bottom: 200px;">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+      <h1>Opret begivenhed</h1>
+      <hr>
+      <form action="/action_page.php" class="modal-form"> <!-- udfyld felter opret bruger -->
+
+<div>
+    <b>Overskrit</b>
+    <input type="text" placeholder="Hvad hedder din begivenhed?">
+</div>
+
+<div>
+    <b>Beskrivelse</b>
+    <input type="text" placeholder="Beskriv din begivenhed ..">
+</div>
+
+<div>
+    <b>Interessekategori</b>
+    <input type="text" placeholder="f.eks. sport, kreativt, strikkeklub, osv..">
+</div>
+<hr style="border: none;">
+
+        <div class="form-group">
+            <label for="tidspunkt"><b>Tidspunkt</b></label>
+            <label for="spørgsmål"><i>Vil du tilføje et tidspunkt til din begivenhed?</i></label>
+         <div>
+            <input type="radio" id="jaTid" name="tidvalg" onclick="document.getElementById('TidInput').style.display='block'">
+            <label for="jaTid" class="custom-radio">Ja</label>
+           
+            <input type="radio" id="nejTid" name="tidvalg" onclick="document.getElementById('TidInput').style.display='none'" checked>
+            <label for="nejTid" class="custom-radio">Nej</label>
+        </div>
+            
+            <div id="TidInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                Dato: <input type="date">
+                Start: <input type="time">
+                Slut: <input type="time">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Sted"><b>Sted</b></label>
+            <label for="spørgsmål"><i>Vil du tilføje en adresse?</i></label>
+            <div>
+                <input type="radio" id="jaSted" name="Stedvalg" onclick="document.getElementById('StedInput').style.display='block'">
+                <label for="jaSted" class="custom-radio">Ja</label>
+               
+                <input type="radio" id="nejSted" name="Stedvalg" onclick="document.getElementById('StedInput').style.display='none'" checked>
+                <label for="nejSted" class="custom-radio">Nej</label>
+            </div>
+            <div id="StedInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                <input type="text" placeholder="Vejnavn, nr, etage" style="width: 100%;">
+                <input type="text" placeholder="Postnummer" style="width: 45%;">
+                <input type="text" placeholder="By" style="width: 45%;">
+                <i>område vises på kort under begivenheden</i> 
+                <div> <input type="checkbox"><i>Kan ses af alle</i> </div>
+                <div> <input type="checkbox"><i>Kan ses af tilmeldte</i></div>
+                <div> <input type="checkbox"><i>Kan ses af tilmeldte 1 døgn før </i> </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="aldersgruppe"><b>Aldersgruppe</b></label>
+            <label for="spørgsmål"><i>Er det for en bestemt aldersgruppe?</i></label>
+            <div>
+                <input type="radio" id="jaAlder" name="Aldervalg" onclick="document.getElementById('AlderInput').style.display='block'">
+                <label for="jaAlder" class="custom-radio">Ja</label>
+               
+                <input type="radio" id="nejAlder" name="Aldervalg" onclick="document.getElementById('AlderInput').style.display='none'" checked>
+                <label for="nejAlder" class="custom-radio">Nej</label>
+            </div>
+            <div id="AlderInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+               Min: <input type="number" placeholder="alder">
+               Max: <input type="number" placeholder="alder">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="tilmelding"><b>Tilmelding</b></label>
+            <label for="spørgsmål"><i>Er der et begrænset antal tilmeldte?</i></label>
+         <div>
+            <input type="radio" id="jaTilmeld" name="TilmeldingValg" onclick="document.getElementById('TilmeldInput').style.display='block'">
+            <label for="jaTilmeld" class="custom-radio">Ja</label>
+           
+            <input type="radio" id="nejTilmeld" name="TilmeldingValg" onclick="document.getElementById('TilmeldInput').style.display='none'" checked>
+            <label for="nejTilmeld" class="custom-radio">Nej</label>
+        </div>
+            
+            <div id="TilmeldInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                Min: <input type="number"  placeholder="antal">
+                Max: <input type="number"  placeholder="antal">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="pris"><b>Pris</b></label>
+            <label for="spørgsmål"><i>Koster det at deltage?</i></label>
+         <div>
+            <input type="radio" id="jaPris" name="Prisvalg" onclick="document.getElementById('PrisInput').style.display='block'">
+            <label for="jaPris" class="custom-radio">Ja</label>
+           
+            <input type="radio" id="nejPris" name="Prisvalg" onclick="document.getElementById('PrisInput').style.display='none'" checked>
+            <label for="nejPris" class="custom-radio">Nej</label>
+        </div>
+            
+            <div id="PrisInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                <input type="number" style="width: 40px;" placeholder="Pris"> kr
+            </div>
+        </div>
+        
+        <div>
+          <div class="flexbox"> 
+            <button type="submit" class="opretbtn" style="margin-bottom: 15px; width: 100%; margin-top: 10px;">Opret begivenhed</button>
+            <label style="display: block; border-bottom: 1px solid black;"></label>   <!-- horizontal linje -->
+          </div>
+          <div class="flexbox">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">luk siden</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
