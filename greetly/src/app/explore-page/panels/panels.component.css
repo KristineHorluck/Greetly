@@ -1,15 +1,262 @@
 .panel {
-    display: flex;
+    padding-left: 15px;
+    padding-right: 30px;
+    padding-top: 17px;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-template-columns:322px auto;
+    grid-template-rows: 100px 450px; /* change rows to move footer*/
+    column-gap: 45px;
 }
 
 .left-panel {
-    width: 316px;
-    height: 609px;
+    height: 450px;
+    background-color: #fbfbfb;
+    border-radius: 7px;
+    font-weight: bold;
+} 
+
+.right-panel {
+    height: 445px;
+    width: 1010px;
+    background-color: #afafaf;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    border-radius: 7px;
+}
+
+.begivenheder {
+    padding: 10px;
+    font-size: 36px;
+}
+
+.search {
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgb(221, 226, 219);
+    width: 283px;
+    height: 27px;
+    box-sizing: border-box;
+    height: 27px; /* Ensure this is enough after padding is considered */
+    padding: 10px; /* Example padding that fits within the height */
+}
+
+.search-input {
+    font-size: 13px;
+    font-style: italic;
+    font-family: 'Calibri', sans-serif;
+    color: rgb(129, 133, 130);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 283px;
+    height: 27px;
+    box-sizing: border-box;
+    height: 27px; /* Ensure this is enough after padding is considered */
+    padding: 10px; /* Example padding that fits within the height */
+}
+
+/* added left marging because padding-left didn't work */
+.left-panel .search {
+    margin-left: 10px;  
+}
+
+.categories{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 24px;
+    color: #3e3e3e;
+    height: 245px;
+}
+
+.create-button{
+    padding-left: 10px;
+}
+
+.create-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 283px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 0; /* Ensure padding doesn't affect inner link */
+    background-color: #31572C; /* Background color on the container */
+    color: #fbfbfb;
+    
+}
+
+.create-button-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 100%; /* Ensure the link covers the entire container area */
+    height: 100%; /* Ensure the link covers the entire container area */
+    color: inherit; /* Optional: Inherits the text color from the parent */
+    text-decoration: none; /* Optional: Removes underline from links */
+    font-size: 20px;
+}
+
+.left-panel .create-button{
+    display: flex;
+    flex-direction: column; /* Stack children elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding-left: 10px;
+    margin-left: 10px; 
+    margin-top: 15px; 
+}
+
+.category-buttons{
+    padding-top: 5px;
+}
+
+.your-events {
+    padding-left: 14px;
+    margin-top: 16px;
+    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns:875px;
+    grid-template-rows:108px 108px 108px; 
+    column-gap: 20px;
+    background-color:aqua;
+    height: 362px;
+}
+
+.your-events {
+    row-gap: 10px;
+}
+
+.attending {
     background-color: #fbfbfb;
 }
 
-.right-panel {
-    flex-grow: 1;
-    height: 1624px;
+.pic{
+    width: 154px;
+    height: 108px;
+}
+
+.favourites {
     background-color: #fbfbfb;
+}
+
+.organizer {
+    background-color: #fbfbfb;
+}
+
+.attending, .favourites, .organizer {
+    background-color: #fbfbfb;
+    height: 100%; /* Ensuring each grid item fills the row height */
+}
+
+.attending, .favourites, .organizer {
+    display: grid;
+    grid-template-columns: 154px auto;  /* fixed width for the image, flexible space for the box */
+    gap: 27px;  /* Spacing between the image and the box */
+    align-items: start;  /* Align items at the start of the grid container */
+    background-color: #fbfbfb;
+}
+
+.attending-pic, .favourites-pic, .organizer-pic {
+    width: 154px; /* fixed width matching grid column */
+    height: 108px; /* specified height */
+}
+
+.attending-box, .organizer-box {
+    display: grid;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 88px; /* Use full width of the grid column */
+    height: 21px; /* Exact height */
+    background-color: #31572C;
+    color: #fbfbfb;
+    border-radius: 7px;
+    grid-column: 2; /* Explicitly place in the second column */
+}
+
+.favourites-box {
+    display: grid;
+    grid-template-columns: auto auto; /* Define two columns */
+    justify-content: start; /* Align items to the start of the grid */
+    gap: 10px; /* Space between the icon and text */
+    align-items: center; /* Center items vertically */
+    width: 88px; /* Adjust width as needed, or keep as is */
+    height: 21px; /* Exact height */
+    background-color: #31572C;
+    color: #fbfbfb;
+    border-radius: 7px;
+    padding-left: 5px; /* Add some padding inside the box */
+    font-weight: bold;
+    grid-column: 2; /* Explicitly place in the second column */
+}
+
+.favourites-event-icon {
+    width: 14px;
+    height: 18.5px;
+}
+.favourites-event-box-text {
+    justify-self: start; /* Start align this text to make it close to the icon */
+    font-size: 12px;
+}
+
+
+
+
+.event-box-text {
+    font-size: 12px; /* Text styling */
+}
+
+.date {
+    padding-top: 7px;
+    font-size: 10px;
+    color: #717171;
+}
+
+.event-discription{
+    padding-top: 14px;
+    font-size: 20px;
+    color: #393939;
+    font-weight: bold;
+}
+
+.address {
+    padding-top: 8px;
+    font-size: 11px;
+    color: #393939;
+    font-weight: bold;
+}
+
+
+.new-favourites-box {
+    display: grid;
+    grid-template-columns: auto auto; /* Define two columns */
+    justify-content: start; /* Align items to the start of the grid */
+    gap: 10px; /* Space between the icon and text */
+    align-items: center; /* Center items vertically */
+    width: 88px; /* Adjust width as needed, or keep as is */
+    height: 21px; /* Exact height */
+    background-color: #31572C;
+    color: #fbfbfb;
+    border-radius: 7px;
+    padding-left: 5px; /* Add some padding inside the box */
+    font-weight: bold;
+    grid-column: 2; /* Explicitly place in the second column */
+}
+
+.new-event-box-text {
+    font-size: 12px;
 }

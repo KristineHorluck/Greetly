@@ -1,9 +1,91 @@
 <div class="panel">
     
-    <div class="panel-right">
+    <div class="left-panel">
+        <div class="begivenheder">Begivenheder</div>
+
+        <div class="search">
+            <input class="search-input" type="search" placeholder="Søg efter begivenheder">
+        </div>
+
+        <div class="categories">Kategorier
+            <div class="category-buttons">
+                <a class="cetagory-pictures"><img src="assets/category-icon.png" alt="Categories" style="width: 260px;"></a>
+            </div>
+            <div class="floating-scrollbar"></div> 
+        </div>
+
+        <div class="create-button">
+            <a mat-flat-button href="https://www.google.com/" target="_blank" class="create-button-link">Opret ny begivenhed</a>
+        </div>
 
     </div>
-    <div class="panel-left">
+
+    <div class="right-panel">
+        Dine begivenheder
+        <div class="your-events">
+
+            <div class="attending">
+                <div class="left-attending">
+                    <div class="attending-pic">
+                        <a routerLink="/attending" class="pic"><img src="assets/attending-pic.png" alt="Attending" ></a>
+                    </div>
+                </div>
+                <div class="right-attending">
+                    <div class="attending-box">
+                        <div class="attending-icon-box">
+                            <div class="attending-icon-box"></div>
+                            <div class="event-box-text">Deltager</div>
+                        </div>               
+                    </div>
+                    <div class="date">ON. 3. APRIL KL. 19:00</div>
+                    <div class="event-discription">Fælles drink aften</div>
+                    <div class="address">Borgers Vej 57, 4.tv, 9000 Aalborg</div>
+                </div>
+            </div>
+
+            <div class="favourites">
+                <div class="right-favourites">
+                    <div class="favourites-pic">
+                        <a routerLink="/favourites" class="pic"><img src="assets/favourites-pic.png" alt="Favourites"></a>
+                    </div>
+                </div>
+                <div class="left-favourites">   
+                    <div class="favourites-box">
+                        <div class="favourites-icon">
+                            <a routerLink="/favourites-icon" class="favourites-event-icon"><img src="assets/favourites-icon.svg" alt="Favourites"></a>
+                        </div>
+                        <div class="favourites-event-box-text">Favoritter</div>
+                    </div>                
+                    <div class="date">ON. 10. APRIL KL. 15:00</div>
+                    <div class="event-discription">Strikkeeftermiddag</div> 
+                    <div class="address">Egevænget 89, 3660 Liseleje</div>
+                </div>
+            </div>
+            <div class="organizer">
+                <div class="left-organizer">
+                    <div class="organizer-pic">
+                        <a routerLink="/organizer" class="pic"><img src="assets/organizer-pic.png" alt="Organizer"></a>
+                    </div>
+                </div>
+                <div class="right-organizer">
+                    <div class="organizer-box">
+                        <div class="organizer-icon-box">
+                            <div class="organizer-icon"></div>
+                            <div class="event-box-text">Arrangør</div>
+                        </div>
+                    </div> 
+                    <div class="date">FR. 24. MAJ KL. 18:00</div>
+                    <div class="event-discription">Fælles drink aften</div>
+                    <div class="address">Suesongade 89, 9000 Aalborg</div>
+                </div>  
+            </div>
+        </div>
+    </div>   
+    <div class="new-favourites-box">
+        <div class="new-favourites-icon">
+            <a routerLink="/favourites-icon" class="event-icon"><img src="assets/favourites-icon.svg" alt="Favourites"></a>
+        </div>
+        <div class="new-event-box-text">Favoritter</div>
     </div>
-    
 </div>
+
