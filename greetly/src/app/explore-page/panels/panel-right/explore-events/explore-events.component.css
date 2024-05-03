@@ -154,6 +154,14 @@ button:hover {
     padding-right: 19px;
 }
 
-.popup-header-icons {
-    
+.popup-header-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 29px; /* Adds a 29px gap between each icon */
+    justify-content: center; /* Center the icons as a group (if there's extra space) */
+    align-items: center; /* Vertically centers the icons */
+}
+
+.popup-header .popup-header-icons {
+    margin-right: 39px;
 }
