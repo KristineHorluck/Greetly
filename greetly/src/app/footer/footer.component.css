@@ -17,6 +17,14 @@
     border-left: 1px solid #31572C;
     height: 100%;
     display: inline-flex;
+    margin-left: 124px;
+    margin-top: 13px;
+    
+}
+
+.footer-info-left-text, 
+.footer-info-right-text{
+    padding-top: 13px;
 }
 
 .footer-logo {
@@ -30,3 +38,5 @@ ul {
     padding: 0;
     overflow: hidden;
 }
+
+
