@@ -8,6 +8,7 @@ import { ContactComponent } from './Blackbox/contact/contact.component';
 import { FAQComponent } from './Blackbox/faq/faq.component';
 import { PoliticsComponent } from './Blackbox/politics/politics.component';
 import { RulesComponent } from './Blackbox/rules/rules.component';
+import { ExploreEventsComponent } from './explore-page/panels/panel-right/explore-events/explore-events.component';
 
 export const routes: Routes = [
     {'path': 'chat', component:ChatComponent},
@@ -19,4 +20,5 @@ export const routes: Routes = [
     {'path': 'FAQ', component:FAQComponent},
     {'path': 'politics', component:PoliticsComponent},
     {'path': 'rules', component:RulesComponent},  
+    {'path': 'popup', component: ExploreEventsComponent},
 ];
