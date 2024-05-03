@@ -50,11 +50,17 @@ input[type=text], input[type=password], button {
 }
 
 button {
-  background-color: #31572C; 
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
+    background-color: #31572C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 17px;
+    width: 202px;
+    height: 47px;
+    font-size: 20px;
+    grid-row: 3;        /* Position button in the third row */
+    justify-self: right; /* Center horizontally in its cell */
+    margin-right: 23px;
 }
 
 button:hover {
@@ -105,6 +111,11 @@ button:hover {
     background-color: aqua; 
     width: 1145px;
     height: 127px;
+    padding-left: 20px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto auto; /* Adjust the proportion as needed, auto auto splits the space */
+    align-items: center; /* Vertically center all items */
+    justify-content: space-between; /* Adjust the space between the two sections */
 }
 
 .left-popup {
@@ -114,7 +125,35 @@ button:hover {
 }
 
 .right-popup {
-    background-color:#333;
+    background-color: #333;
     width: 661px;
     height: 1113px;
+    display: grid;                    /* Using grid layout */
+    grid-template-rows: auto 1fr auto; /* Three rows: for the content, spacing, and the button */
+    grid-template-columns: 100%;      /* Full width */
+    place-items: center;              /* Center items horizontally */
+}
+
+.content-text {
+    width: 603px;
+    height: 554px;
+    background-color: #f3f3f3;
+    justify-self: center; 
+}
+
+.right-popup-pic {
+    display: grid; /* Set the container as a grid */
+    width: 603px;
+    height: 375px;
+    background-color: #c6c6c6;
+    margin-top: 33px;
+    border-radius: 15px;
+    padding-top: 21px; /* Add padding at the top */
+    align-items: start; /* Align grid items at the start vertically */
+    justify-content: end; /* Align grid items at the end horizontally */
+    padding-right: 19px;
+}
+
+.popup-header-icons {
+    
 }
