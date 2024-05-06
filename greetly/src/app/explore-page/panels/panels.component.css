@@ -83,7 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 283px;
+    width: 293px;
     height: 56px;
     border-radius: 10px;
     padding: 0; /* Ensure padding doesn't affect inner link */
@@ -102,6 +102,9 @@
     color: inherit; /* Optional: Inherits the text color from the parent */
     text-decoration: none; /* Optional: Removes underline from links */
     font-size: 20px;
+    background-color: #31572C; /* wtf hvorfor skifter den ikke farve*/
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 .left-panel .create-button{
@@ -115,6 +118,8 @@
     margin-left: 10px; 
     margin-top: 15px; 
 }
+
+
 
 .category-buttons{
     padding-top: 5px;
@@ -176,19 +181,9 @@
     height: 108px; /* specified height */
 }
 
-.attending-box, .organizer-box {
-    display: grid;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 88px; /* Use full width of the grid column */
-    height: 21px; /* Exact height */
-    background-color: #31572C;
-    color: #fbfbfb;
-    border-radius: 7px;
-    grid-column: 2; /* Explicitly place in the second column */
-}
+ 
 
-.favourites-box {
+.favourites-box, .attending-box, .organizer-box{
     display: grid;
     grid-template-columns: auto auto; /* Define two columns */
     justify-content: start; /* Align items to the start of the grid */
@@ -202,13 +197,14 @@
     padding-left: 5px; /* Add some padding inside the box */
     font-weight: bold;
     grid-column: 2; /* Explicitly place in the second column */
+    font-size: 18px;
 }
 
-.favourites-event-icon {
+.favourites-event-icon, .attending.event-icon, .organizer-event-icon{
     width: 14px;
     height: 18.5px;
 }
-.favourites-event-box-text {
+.favourites-event-box-text, .attending-event-box-text, .organizer-event-box-text {
     justify-self: start; /* Start align this text to make it close to the icon */
     font-size: 12px;
 }
@@ -240,23 +236,3 @@
     font-weight: bold;
 }
 
-
-.new-favourites-box {
-    display: grid;
-    grid-template-columns: auto auto; /* Define two columns */
-    justify-content: start; /* Align items to the start of the grid */
-    gap: 10px; /* Space between the icon and text */
-    align-items: center; /* Center items vertically */
-    width: 88px; /* Adjust width as needed, or keep as is */
-    height: 21px; /* Exact height */
-    background-color: #31572C;
-    color: #fbfbfb;
-    border-radius: 7px;
-    padding-left: 5px; /* Add some padding inside the box */
-    font-weight: bold;
-    grid-column: 2; /* Explicitly place in the second column */
-}
-
-.new-event-box-text {
-    font-size: 12px;
-}
