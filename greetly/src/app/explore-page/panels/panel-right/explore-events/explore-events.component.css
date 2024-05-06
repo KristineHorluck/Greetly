@@ -165,3 +165,36 @@ button:hover {
 .popup-header .popup-header-icons {
     margin-right: 39px;
 }
+
+.left-popup-age-name {
+  background-color: #c6c6c6;
+  width: 384px;
+  height: 132px;
+}
+
+
+
+.left-popup-interestcategory {
+  background-color: #c6c6c6;
+  width: 384px;
+  height: 157px;
+  
+}
+
+.left-popup-price {
+  background-color: #c6c6c6;
+  width: 384px;
+  height: 123px;
+}
+
+.left-popup-number-text-attending {
+  background-color: #c6c6c6;
+  width: 384px;
+  height: 150px;
+}
+
+.left-popup-adress {
+  background-color: #c6c6c6;
+  width: 384px;
+  height: 449px;
+}
