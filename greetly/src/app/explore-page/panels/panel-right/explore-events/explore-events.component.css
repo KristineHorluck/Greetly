@@ -1,200 +1,232 @@
 label {
-    display: block; /* Viser label som et blokelement */
-    text-align: center; /* Venstrestiller teksten i label */
-    margin-bottom: 5px; /* Afstand under label */ }
+  display: block; /* Viser label som et blokelement */
+  margin-bottom: 5px; /* Afstand under label */ }
 
 .psw {
-  display: block; /* Ændrer til blok for at stå på sin egen linje */
+display: block; /* Ændrer til blok for at stå på sin egen linje */
 }
 
 /* Global styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
 }
 
 /* Flexbox styles for form and image container */
 .flex-container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+display: grid;
+justify-content: center;
+align-items: center;
 
 }
 
 /* login container styles */
 .container {
-  width: 1145px;
-  height: 1279px;
-  background-color: #FBFBFB;
-  text-align: center;
-  margin-bottom: 10px;
-  border-radius: 12px; /* runde hjørner */
-  padding: 20px;
-  margin-left: 40px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* drop shadow */
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
+width: 1145px;
+height: 1279px;
+background-color: #FBFBFB;
+text-align: center;
+margin-bottom: 10px;
+border-radius: 12px; /* runde hjørner */
+padding: 20px;
+margin-left: 40px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* drop shadow */
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 3;
 }
 
 /* Input and button styles */
 input[type=text], input[type=password], button {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
 }
 
 button {
-    background-color: #31572C;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 17px;
-    width: 202px;
-    height: 47px;
-    font-size: 20px;
-    grid-row: 3;        /* Position button in the third row */
-    justify-self: right; /* Center horizontally in its cell */
-    margin-right: 23px;
+  background-color: #31572C;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  width: 202px;
+  height: 47px;
+  font-size: 20px;
+  grid-row: 3;        /* Position button in the third row */
+  justify-self: right; /* Center horizontally in its cell */
+  margin-right: 23px;
 }
 
 button:hover {
-  opacity: 0.8;
+opacity: 0.8;
 }
 
 button:hover {
-  opacity: 0.8;
+opacity: 0.8;
 }
 /* opret bruger pop-up styles */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding-top: 50px;
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+padding-top: 50px;
 }
 
 .modal-content {
-  background-color: #FBFBFB;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-  width: 25%;
+background-color: #FBFBFB;
+margin: 5% auto;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+width: 25%;
 }
 
 .close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 30px;
-  color: #333;
-  cursor: pointer;
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 30px;
+color: #333;
+cursor: pointer;
 }
 
 .panels {
-    display: grid;
-    grid-template-columns: 412px 661px; /* Widths of left and right popup respectively */
-    grid-gap: 72px; /* Optional: space between columns */
+  display: grid;
+  grid-template-columns: 412px 661px; /* Widths of left and right popup respectively */
+  grid-gap: 72px; /* Optional: space between columns */
 }
 .popup-header {
-    background-color: aqua; 
-    width: 1145px;
-    height: 127px;
-    padding-left: 20px;
-    display: grid; /* Use grid layout */
-    grid-template-columns: auto auto; /* Adjust the proportion as needed, auto auto splits the space */
-    align-items: center; /* Vertically center all items */
-    justify-content: space-between; /* Adjust the space between the two sections */
+  background-color: aqua; 
+  width: 1145px;
+  height: 127px;
+  padding-left: 20px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: auto auto; /* Adjust the proportion as needed, auto auto splits the space */
+  align-items: center; /* Vertically center all items */
+  justify-content: space-between; /* Adjust the space between the two sections */
 }
 
 .left-popup {
-    background-color: blueviolet;
-    width: 412px;
-    height: 1113px;
+  background-color: blueviolet;
+  width: 412px;
+  height: 1113px;
+  display: grid;                /* Set the display to grid */
+  place-items: center;          /* Shortcut to align items centrally both horizontally and vertically */
+  grid-gap: 10px;    
 }
 
 .right-popup {
-    background-color: #333;
-    width: 661px;
-    height: 1113px;
-    display: grid;                    /* Using grid layout */
-    grid-template-rows: auto 1fr auto; /* Three rows: for the content, spacing, and the button */
-    grid-template-columns: 100%;      /* Full width */
-    place-items: center;              /* Center items horizontally */
+  background-color: #333;
+  width: 661px;
+  height: 1113px;
+  display: grid;                    /* Using grid layout */
+  grid-template-rows: auto 1fr auto; /* Three rows: for the content, spacing, and the button */
+  grid-template-columns: 100%;      /* Full width */
+  place-items: center;              /* Center items horizontally */
 }
 
 .content-text {
-    width: 603px;
-    height: 554px;
-    background-color: #f3f3f3;
-    justify-self: center; 
+  width: 603px;
+  height: 554px;
+  background-color: #f3f3f3;
+  justify-self: center; 
 }
 
 .right-popup-pic {
-    display: grid; /* Set the container as a grid */
-    width: 603px;
-    height: 375px;
-    background-color: #c6c6c6;
-    margin-top: 33px;
-    border-radius: 15px;
-    padding-top: 21px; /* Add padding at the top */
-    align-items: start; /* Align grid items at the start vertically */
-    justify-content: end; /* Align grid items at the end horizontally */
-    padding-right: 19px;
+  display: grid; /* Set the container as a grid */
+  width: 603px;
+  height: 375px;
+  background-color: #c6c6c6;
+  margin-top: 33px;
+  border-radius: 15px;
+  padding-top: 21px; /* Add padding at the top */
+  align-items: start; /* Align grid items at the start vertically */
+  justify-content: end; /* Align grid items at the end horizontally */
+  padding-right: 19px;
 }
 
 .popup-header-icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
-    gap: 29px; /* Adds a 29px gap between each icon */
-    justify-content: center; /* Center the icons as a group (if there's extra space) */
-    align-items: center; /* Vertically centers the icons */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+  gap: 29px; /* Adds a 29px gap between each icon */
+  justify-content: center; /* Center the icons as a group (if there's extra space) */
+  align-items: center; /* Vertically centers the icons */
 }
 
 .popup-header .popup-header-icons {
-    margin-right: 39px;
+  margin-right: 39px;
 }
 
 .left-popup-age-name {
-  background-color: #c6c6c6;
-  width: 384px;
-  height: 132px;
+background-color: #c6c6c6;
+width: 384px;
+height: 132px;
 }
 
 
 
 .left-popup-interestcategory {
-  background-color: #c6c6c6;
-  width: 384px;
-  height: 157px;
-  
+background-color: #c6c6c6;
+width: 384px;
+height: 157px;
+
 }
 
 .left-popup-price {
-  background-color: #c6c6c6;
-  width: 384px;
-  height: 123px;
+background-color: #c6c6c6;
+width: 384px;
+height: 123px;
 }
 
 .left-popup-number-text-attending {
-  background-color: #c6c6c6;
-  width: 384px;
-  height: 150px;
+background-color: #c6c6c6;
+width: 384px;
+height: 150px;
 }
 
 .left-popup-adress {
-  background-color: #c6c6c6;
-  width: 384px;
-  height: 449px;
+background-color: #c6c6c6;
+width: 384px;
+height: 449px;
+}
+
+.left-popup-age-name, .left-popup-interestcategory, .left-popup-price, .left-popup-number-text-attending, .left-popup-adress {
+margin: 0 auto; /* Centers horizontally */
+}
+
+.left-popup-age-name {
+display: grid;
+grid-template-columns: 128px auto; /* 1fr takes remaining space, auto takes space as needed by content */
+gap: 5px; /* Adjust the gap as needed */
+align-items: center; /* Align items vertically in the center */
+background-color: #c6c6c6;
+width: 384px;
+height: 132px;
+margin: 0 auto; /* Center horizontally */
+}
+
+.age-icon-number {
+display: grid;
+grid-template-columns: 16px 45px; /* Allocates enough space for the icon and the number based on their content */
+gap: 5px; /* Sets a 5px gap between the grid items */
+align-items: center; /* Vertically centers the items in their row */
+background-color: aqua;
+}
+
+.name {
+display: grid;
+align-items: start; /* Aligns items to the start vertically */
+justify-content: start; /* Aligns content to the start horizontally */
+background-color: aqua;
 }
