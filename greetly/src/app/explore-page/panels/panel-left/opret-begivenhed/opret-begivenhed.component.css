@@ -62,6 +62,16 @@ input[type="text"]{
     margin-bottom: 15px;
 }
 
+textarea{
+    width: 90%;
+    border: none;
+    background-color: #f1f1f1f1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
   /* Style for radio buttons when checked */
   input[type="radio"]:checked + .custom-radio {
     background-color: #31572C;
@@ -80,10 +90,13 @@ input[type="text"]{
   }
   
   .cancelbtn {
-    background-color: #ccc;
+    background-color: #31572C;
+    color: white;
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
+    width: 97.5%;
+    opacity: 0.6;
     border: none;
   }
   
@@ -144,9 +157,6 @@ input[type="text"]{
     margin-top: 5px;
   }
 
-  .cancelbtn {
-    width: 97.5%;
-    text-emphasis-color: white;
-    opacity: 0.6;
-    background-color: #31572C;
-  }
+.image-upload {
+    margin: 8px;
+}

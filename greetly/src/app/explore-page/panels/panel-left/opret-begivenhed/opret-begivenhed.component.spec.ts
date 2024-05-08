@@ -21,3 +21,4 @@ describe('OpretBegivenhedComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

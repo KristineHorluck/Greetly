@@ -8,30 +8,38 @@
 </head>
 <body>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 8px; background-color: #31572C; width: 50%;">Opret bruger</button>
+<button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 8px;
+ background-color: #31572C; width: 20%; height: 50px;">Opret bruger</button>
 <div id="id01" class="modal">
   <div class="flex-container" style="padding-bottom: 200px;">
     <div class="modal-content">
       <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
       <h1>Opret begivenhed</h1>
-      <hr>
-      <form action="/action_page.php" class="modal-form"> <!-- udfyld felter opret bruger -->
+      <hr> <!-- hrizontal line -->
+      <form action="/action_page.php" method="post" class="modal-form"> <!-- udfyld felter opret bruger -->
 
-<div>
-    <b>Overskrit</b>
-    <input type="text" placeholder="Hvad hedder din begivenhed?">
-</div>
+        <div class="form-group">
+            <label for="billede"><b>Billede</b></label>
+            <div class="image-upload">
+                <input id="upload" type="file" name="billede" accept="image/*">
+            </div>
+        </div>
 
-<div>
-    <b>Beskrivelse</b>
-    <input type="text" placeholder="Beskriv din begivenhed ..">
-</div>
 
-<div>
-    <b>Interessekategori</b>
-    <input type="text" placeholder="f.eks. sport, kreativt, strikkeklub, osv..">
-</div>
-<hr style="border: none;">
+    <div> <label for="overskrift"></label><b>Overskrift</b>
+    <input type="text" id="overskrift" placeholder="Hvad hedder din begivenhed?"> 
+    </div>
+
+    <div> <label for="beskrivelse"></label><b>Beskrivelse</b>
+        <textarea name="beskrivelse" id="beskrivelse" cols="40" rows="5" placeholder="Beskriv din begivenhed"></textarea>
+    </div>
+
+
+    <div> <label for="interessekategori"></label><b>Interessekategori</b>
+    <input type="text" id="interessekategori" placeholder="F.eks. sport, kreativt, strikkeklub, osv..">
+    </div>
+
+    <br> <!-- line break -->
 
         <div class="form-group">
             <label for="tidspunkt"><b>Tidspunkt</b></label>
@@ -62,10 +70,9 @@
                 <label for="nejSted" class="custom-radio">Nej</label>
             </div>
             <div id="StedInput" style="display: none; padding: 10px; padding-bottom: 12px;">
-                <input type="text" placeholder="Vejnavn, nr, etage" style="width: 100%;">
-                <input type="text" placeholder="Postnummer" style="width: 45%;">
-                <input type="text" placeholder="By" style="width: 45%;">
-                <i>område vises på kort under begivenheden</i> 
+                <input type="text" placeholder="Vejnavn, nr, etage" style="width: 90%;">
+                <input type="text" placeholder="By og postnummer" style="width: 90%;">
+               <div> <i>område vises på kort under begivenheden</i> </div>
                 <div> <input type="checkbox"><i>Kan ses af alle</i> </div>
                 <div> <input type="checkbox"><i>Kan ses af tilmeldte</i></div>
                 <div> <input type="checkbox"><i>Kan ses af tilmeldte 1 døgn før </i> </div>
@@ -73,8 +80,8 @@
         </div>
         
         <div class="form-group">
-            <label for="aldersgruppe"><b>Aldersgruppe</b></label>
-            <label for="spørgsmål"><i>Er det for en bestemt aldersgruppe?</i></label>
+            <label for="aldersgruppe"><b>Målgruppe</b></label>
+            <label for="spørgsmål"><i>Er det for en bestemt målgruppe?</i></label>
             <div>
                 <input type="radio" id="jaAlder" name="Aldervalg" onclick="document.getElementById('AlderInput').style.display='block'">
                 <label for="jaAlder" class="custom-radio">Ja</label>
@@ -85,7 +92,13 @@
             <div id="AlderInput" style="display: none; padding: 10px; padding-bottom: 12px;">
                Min: <input type="number" placeholder="alder">
                Max: <input type="number" placeholder="alder">
+               <div>
+                <input type="checkbox" name="type" value="1">Kvinder
+                <input type="checkbox" name="type" value="2">Mænd
+                <input type="checkbox" name="type" value="3">Alle
+              </div>
             </div>
+          
         </div>
 
         <div class="form-group">
@@ -118,7 +131,13 @@
         </div>
             
             <div id="PrisInput" style="display: none; padding: 10px; padding-bottom: 12px;">
-                <input type="number" style="width: 40px;" placeholder="Pris"> kr
+                <label for="fast pris"><i>Fast pris:</i></label>
+                <input type="number" style="width: 40px; margin-left: 4px;"> kr.
+                <div>
+                    <label for="pris"><i>Ca. pris:</i></label>
+                <input type="number" placeholder="min" style="width: 40px; margin-left: 4px;"> kr.
+                <input type="number" placeholder="max" style="width: 40px; margin-left: 4px;"> kr.
+                </div>
             </div>
         </div>
         
@@ -127,8 +146,9 @@
             <button type="submit" class="opretbtn" style="margin-bottom: 15px; width: 100%; margin-top: 10px;">Opret begivenhed</button>
             <label style="display: block; border-bottom: 1px solid black;"></label>   <!-- horizontal linje -->
           </div>
+          <hr>
           <div class="flexbox">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">luk siden</button>
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Luk siden</button>
         </div>
         </div>
       </form>
