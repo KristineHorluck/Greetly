@@ -1,17 +1,18 @@
 .panel {
+    display: grid;
     padding-left: 15px;
     padding-right: 30px;
     padding-top: 17px;
-    display: grid;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-template-columns:322px auto;
-    grid-template-rows: 100px 450px; /* change rows to move footer*/
+    grid-template-rows: 100px 2100px; /* change rows to move footer*/
     column-gap: 45px;
+    background-color:brown;
 }
 
 .left-panel {
-    height: 450px;
+    height: 560px;
     background-color: #fbfbfb;
     border-radius: 7px;
     font-weight: bold;
@@ -22,13 +23,12 @@
     width: 1010px;
     background-color: #afafaf;
     padding: 20px;
-    font-size: 24px;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
     border-radius: 7px;
 }
 
-.begivenheder {
+.big-text {
     padding: 10px;
     font-size: 36px;
 }
@@ -119,69 +119,47 @@
     margin-top: 15px; 
 }
 
-
-
 .category-buttons{
     padding-top: 5px;
 }
 
+.friends-pic {
+    padding-left: 10px;
+}
+
 .your-events {
-    padding-left: 14px;
-    margin-top: 16px;
-    font-size: 20px;
-    font-family: 'Calibri', sans-serif;
     display: grid;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-template-columns:875px;
-    grid-template-rows:108px 108px 108px; 
-    column-gap: 20px;
-    background-color:aqua;
-    height: 362px;
-}
-
-.your-events {
-    row-gap: 10px;
-}
-
-.attending {
-    background-color: #fbfbfb;
+    grid-template-columns: 154px auto; /* Adjust this to match image width and content width */
+    grid-template-rows: auto 2px auto 2px auto; /* Rows for content and lines */
+    row-gap: 10px; /* Maintaining the 10px gap */
+    background-color: aqua;
+    align-items: start; /* Ensure alignment of items at the start */
+    padding-left: 0; /* Remove padding if present */
 }
 
 .pic{
     width: 154px;
     height: 108px;
 }
-
-.favourites {
-    background-color: #fbfbfb;
-}
-
-.organizer {
-    background-color: #fbfbfb;
-}
-
-.attending, .favourites, .organizer {
-    background-color: #fbfbfb;
-    height: 100%; /* Ensuring each grid item fills the row height */
+.medium-text {
+    font-size: 24px;
+    padding-bottom: 16px;
 }
 
 .attending, .favourites, .organizer {
     display: grid;
-    grid-template-columns: 154px auto;  /* fixed width for the image, flexible space for the box */
-    gap: 27px;  /* Spacing between the image and the box */
-    align-items: start;  /* Align items at the start of the grid container */
+    grid-template-columns: 154px auto;
+    gap: 27px;
+    align-items: start;
     background-color: #fbfbfb;
+    height: 108px;
+    width: 1010px;
 }
 
 .attending-pic, .favourites-pic, .organizer-pic {
     width: 154px; /* fixed width matching grid column */
     height: 108px; /* specified height */
 }
-
- 
 
 .favourites-box, .attending-box, .organizer-box{
     display: grid;
@@ -236,3 +214,11 @@
     font-weight: bold;
 }
 
+.line {
+    grid-column: 1 / -1; /* Extend line across all columns */
+    width: 720px; /* Set the specific width */
+    height: 1px; /* As specified */
+    background-color: #31572C; /* Assuming the line should be green */
+    justify-self: center; /* Center the line horizontally within the grid column */
+    margin-left: 18px;
+}
