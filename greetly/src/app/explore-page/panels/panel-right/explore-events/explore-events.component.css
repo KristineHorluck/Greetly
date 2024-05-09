@@ -144,16 +144,18 @@ cursor: pointer;
 }
 
 .right-popup-pic {
-  display: grid; /* Set the container as a grid */
+  margin-top: 33px;
+}
+
+.popup-event-pic {
+  display: grid;
   width: 603px;
   height: 375px;
-  background-color: #c6c6c6;
-  margin-top: 33px;
   border-radius: 15px;
-  padding-top: 21px; /* Add padding at the top */
-  align-items: start; /* Align grid items at the start vertically */
-  justify-content: end; /* Align grid items at the end horizontally */
-  padding-right: 19px;
+}
+
+.payment-icon {
+  position: relative;
 }
 
 .popup-header-icons {
@@ -173,7 +175,6 @@ background-color: #c6c6c6;
 width: 384px;
 height: 132px;
 }
-
 
 
 .left-popup-interestcategory {
