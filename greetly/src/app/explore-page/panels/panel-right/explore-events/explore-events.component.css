@@ -144,18 +144,22 @@ cursor: pointer;
 }
 
 .right-popup-pic {
-  margin-top: 33px;
+    position: relative; /* Make this a positioning context */
+    display: grid; /* Use grid layout if necessary */
+    width: 100%; /* Ensures it takes the full width of its parent */
+    height: auto; /* Height is as tall as its content */
 }
 
 .popup-event-pic {
-  display: grid;
-  width: 603px;
-  height: 375px;
-  border-radius: 15px;
+    grid-area: 1 / 1 / 2 / 2; /* Covers the entire grid */
+    border-radius: 15px;
 }
 
 .payment-icon {
-  position: relative;
+    position: absolute; /* Positioned absolutely within relative container */
+    right: 25px; /* Place it 10px from the right edge */
+    top: 10px; /* Place it 10px from the bottom edge */
+    z-index: 10; /* Ensure it's on top */
 }
 
 .popup-header-icons {
