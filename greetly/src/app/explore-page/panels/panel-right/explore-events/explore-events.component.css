@@ -201,9 +201,18 @@ height: 150px;
 }
 
 .left-popup-adress {
+display: grid;
 background-color: #c6c6c6;
 width: 384px;
 height: 449px;
+justify-content: center; /* Center the icons as a group (if there's extra space) */
+align-items: center; /* Vertically centers the icons */
+}
+
+.map {
+    width: 354px;
+    height: 356px;
+    
 }
 
 .left-popup-age-name, .left-popup-interestcategory, .left-popup-price, .left-popup-number-text-attending, .left-popup-adress {
@@ -235,3 +244,5 @@ align-items: start; /* Aligns items to the start vertically */
 justify-content: start; /* Aligns content to the start horizontally */
 background-color: aqua;
 }
+
+
