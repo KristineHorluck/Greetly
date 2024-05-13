@@ -1,0 +1,60 @@
+.min-side{
+    background-color: rgb(236, 234, 253);
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+/* Min Side */
+.profil-container{
+    background-color: aqua;
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+/* Arrangeret af dig */
+.arrangeret-container{
+    background-color: rgb(24, 128, 128);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.arrangeret-container {
+    display: grid;
+    grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
+    grid-gap: 20px; /* Gap between grid items */
+}
+/* Favoritter */
+.favoritter-container{
+    background-color: rgb(80, 59, 100);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.favoritter-container {
+    display: grid;
+    grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+/* Deltager i */
+.deltager-container{
+    background-color: rgb(250, 180, 114);
+    border-radius: 10px;
+}
+.deltager-container {
+    display: grid;
+    grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
+    grid-gap: 20px; /* Gap between grid items */
+}
+
+.left-side {
+    grid-column: 1; /* Place the left side in the first column */
+    background-color: rgb(179, 179, 247);
+}
+
+.right-side {
+    grid-column: 2; /* Place the right side in the second column */
+    background-color: antiquewhite;
+}
+
+
+
+

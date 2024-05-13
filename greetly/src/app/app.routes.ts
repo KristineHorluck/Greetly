@@ -8,7 +8,7 @@ import { ContactComponent } from './Blackbox/contact/contact.component';
 import { FAQComponent } from './Blackbox/faq/faq.component';
 import { PoliticsComponent } from './Blackbox/politics/politics.component';
 import { RulesComponent } from './Blackbox/rules/rules.component';
-import { AboutMeComponent } from './profile-page/my-page/about-me/about-me.component';
+import { MyPageComponent } from './profile-page/my-page/my-page.component';
 
 export const routes: Routes = [
     {path:"", redirectTo: "/explore page", pathMatch:'full'},
@@ -21,5 +21,5 @@ export const routes: Routes = [
     {path: 'FAQ', component:FAQComponent},
     {path: 'politics', component:PoliticsComponent},
     {path: 'rules', component:RulesComponent},  
-    {path: 'About me', component: AboutUsComponent}
+    {path: 'mypage', component:MyPageComponent}
 ];
