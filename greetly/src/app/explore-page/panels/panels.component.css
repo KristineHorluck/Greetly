@@ -7,8 +7,7 @@
     grid-row-end: 2;
     grid-template-columns:322px auto;
     grid-template-rows: 100px 2100px; /* change rows to move footer*/
-    column-gap: 45px;
-    background-color:brown;
+    column-gap: 24px;
 }
 
 .left-panel {
@@ -21,15 +20,15 @@
 .right-panel {
     display: grid;
     height: 1517px;
-    row-gap: 32px;
-    background-color: beige;
+    row-gap: 24px;
+    background-color: transparent;
 }
 
 .upper-right-panel {
     display: grid;
     height: 445px;
     width: 1010px;
-    background-color: #afafaf;
+    background-color: #fbfbfb;
     padding: 20px;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
@@ -140,7 +139,7 @@
     grid-template-columns: 154px auto; /* Adjust this to match image width and content width */
     grid-template-rows: auto 2px auto 2px auto; /* Rows for content and lines */
     row-gap: 10px; /* Maintaining the 10px gap */
-    background-color: aqua;
+    background-color: transparent;
     align-items: start; /* Ensure alignment of items at the start */
     padding-left: 0; /* Remove padding if present */
 }
@@ -159,7 +158,7 @@
     grid-template-columns: 154px auto;
     gap: 27px;
     align-items: start;
-    background-color: #fbfbfb;
+    background-color: transparent;
     height: 108px;
     width: 1010px;
 }
@@ -242,10 +241,10 @@
 .filter-container {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 40px; /* Gap between the filter-items*/
+    grid-gap: 36px; /* Gap between the filter-items*/
     margin-bottom: 20px; /* Add margin to separate from cards */
     background-color: #fbfbfb;
-    margin: 25px;
+    margin: 15px;
 }
 
 .filter-item {
@@ -259,4 +258,69 @@
     align-items: center;
     font-size: 12px;
     align-items: center;
+}
+
+ /* Cards */
+ .container {
+    width: auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+    justify-items: center;
+    background-color: #fbfbfb;
+    height: 725px;
+}
+
+.cards{
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    display: block;
+    width: 320px;
+    height: auto;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%; /* Limit the width of the image to 100% of its container */
+    display: block; /* Ensure the image behaves as a block element */ 
+    height: auto; /* Set a fixed height for the container */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.content{
+    line-height: 7px;
+    padding-bottom: 20px;
+    margin-left: 7px;
+    color: #6A6A6A; 
+}
+
+.content h3{
+    color: #3D3D3D;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.more-button {
+    position: absolute; /* Gør knappen absolut positioneret */
+    bottom: 10px; /* Afstand fra bunden */
+    right: 10px; /* Afstand fra højre */
+    color: #000000;
+    font-weight: lighter;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.explore-events h2 {
+    margin-left: 15px;
 }
