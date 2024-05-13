@@ -198,3 +198,76 @@
     </div>
 </div>
 
+<div class="form-popup" id="myForm">
+<form action="action_page.php" class="form-container">
+    <div class="container" style="align-items: start;"> <!-- Changed from 'left' to 'start' for valid CSS -->
+        <div class="popup-header">
+            <div class="popup-header-text">
+                <h1>Overskrift</h1>
+            </div>
+            <div class="popup-header-icons">
+                <div class="left-icon">
+                    <a routerLink="/chat-popup-icon" class="chat-icon"><img src="assets/chat-icon.svg" alt="Chat-icon"></a>
+                </div>
+                <div class="middle-icon">
+                    <a routerLink="/favourites-popup-icon" class="favourites-icon"><img src="assets/favourites-icon.svg" alt="Favourites-icon"></a>
+                </div>
+                <div class="right-icon">
+                    <a routerLink="/share-popup-icon" class="share-icon"><img src="assets/share-icon.svg" alt="Share-icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="left-popup">
+                <div class="left-popup-age-name">
+                    <div class="right-popup-profile">
+                        <a class="profile-pic-icon"><img src="assets/popup-profile-pic.svg" alt="Profile pic"></a>
+                    </div>
+                    <div class="left-popup-profile">
+                        <div class="name">
+                            <h2>Kirsten F.</h2>
+                        </div>
+                        <div class="age-icon-number">
+                            <div class="age-icon">
+                                <a class="birthday-icon"><img src="assets/birthday-icon.svg" alt="Birthday-icon"></a>
+                            </div>
+                            <div class="age-number">
+                                <h4>Alder</h4>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+                <div class="left-popup-interestcategory">
+                    <h3>Interessekategori:</h3>
+                </div>
+                <div class="left-popup-price">
+                    <h3>Pris:</h3>
+                </div>
+                <div class="left-popup-number-text-attending">
+                    <h3>Antal deltagere:</h3>
+                    <h4>7/15</h4>
+                </div>
+                <div class="left-popup-adress">
+                    <h3>Adresse:</h3> 
+                    <div class="map">
+                        <a class="map-pic"><img src="assets/map-pic.svg" alt="Map-pic"></a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="right-popup">
+                <div class="right-popup-pic">
+                    <a class="popup-event-pic"><img src="assets/popup-event-pic.svg" alt="Popup event pic"></a>
+                    <div class="payment-icon">
+                        <a routerLink="/right-popup-icon" class="payment-icon"><img src="assets/payment-icon.svg" alt="Payment-icon"></a>
+                    </div>
+                </div>
+                <div class="content-text">
+                    <p>Content here...</p>
+                </div>
+                <button type="submit">Tilmeld</button>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
