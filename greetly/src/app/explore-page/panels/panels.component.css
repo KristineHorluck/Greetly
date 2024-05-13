@@ -19,6 +19,14 @@
 } 
 
 .right-panel {
+    display: grid;
+    height: 1517px;
+    row-gap: 32px;
+    background-color: beige;
+}
+
+.upper-right-panel {
+    display: grid;
     height: 445px;
     width: 1010px;
     background-color: #afafaf;
@@ -218,4 +226,37 @@
     background-color: #31572C; /* Assuming the line should be green */
     justify-self: center; /* Center the line horizontally within the grid column */
     margin-left: 18px;
+}
+
+/* JENNIES */
+
+.lower-right-panel{
+    position: relative;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    height: 1000px;
+    width: 1050px;
+}
+
+/* Filters */
+.filter-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 40px; /* Gap between the filter-items*/
+    margin-bottom: 20px; /* Add margin to separate from cards */
+    background-color: #fbfbfb;
+    margin: 25px;
+}
+
+.filter-item {
+    background-color: #fbfbfb;
+    border-radius: 3px;
+    border: 1.5px solid #31572C; /* Add border */
+    color: #4c4c4c;
+    display: grid;
+    width: 170px;
+    grid-template-columns: auto 1fr; /* Image takes up auto width, text takes up remaining width */
+    align-items: center;
+    font-size: 12px;
+    align-items: center;
 }
