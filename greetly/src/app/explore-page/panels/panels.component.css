@@ -104,6 +104,7 @@
 
 .create-button-link:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .left-panel .create-button{
@@ -239,16 +240,22 @@
 }
 
 .filter-item {
+    display: grid;
     background-color: #fbfbfb;
     border-radius: 3px;
     border: 1.5px solid #31572C; /* Add border */
     color: #4c4c4c;
-    display: grid;
     width: 170px;
     grid-template-columns: auto 1fr; /* Image takes up auto width, text takes up remaining width */
     align-items: center;
     font-size: 12px;
-    align-items: center;
+    grid-template-columns: auto auto; /* Define two columns */
+    justify-content: center;
+}
+
+
+.filter-item:hover {
+    cursor: pointer;
 }
 
  /* Cards */
@@ -335,6 +342,7 @@
     background-color: #31572C;
     border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
     color: #fbfbfb;
+    cursor: pointer;
 }
 
  /* .show-button {
@@ -351,4 +359,178 @@
     cursor: pointer;
  } */
 
+ /* Style for the modal */
+.modal {
+    display: none; /* Skjul modal som standard if we want it infront to begin with write 'block' */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Baggrundsfarve og gennemsigtighed */
+  }
+  
+  /* Style for the modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrer modalen vertikalt og 15% fra toppen */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* 80% af vinduets bredde */
+    border-radius: 8px;
+  }
+  
+  /* Style for close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Custom styling for radio buttons */
+  input[type="radio"] {
+    display: none; /* Skjul radio-knapperne */
+  }
+  
+  .custom-radio {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #31572C;
+    opacity: 0.6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .custom-radio:hover {
+    opacity: 0.8;
+  }
+  
+input[type="text"]{
+    width: 90%;
+    border: none;
+    background-color: #f1f1f1f1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 90%;
+    border: none;
+    background-color: #f1f1f1f1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+  /* Style for radio buttons when checked */
+  input[type="radio"]:checked + .custom-radio {
+    background-color: #31572C;
+    opacity: 1;
+  }
+
+  /* Style for buttons */
+  .opretbtn {
+    background-color: #31572C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .opretbtn:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    background-color: #31572C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 97.5%;
+    opacity: 0.6;
+    border: none;
+  }
+
+  .cancelbtn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style for horizontal line */
+  hr {
+    border: 0.5px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox styling for button container */
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .botton-container {
+    margin-top: 20px;
+  }
+  
+
+  .custom-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px; /* centreret 50/50 (på hver side) */
+    margin-right: 20px; /* Just for spacing */
+    cursor: pointer;
+  }
+  
+  .custom-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px; /* Just an example value */
+    height: 20px; /* Just an example value */
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group div {
+    margin-top: 5px;
+  }
+
+.image-upload {
+    margin: 8px;
+}
     
