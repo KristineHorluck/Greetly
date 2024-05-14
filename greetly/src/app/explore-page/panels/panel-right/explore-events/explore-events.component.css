@@ -29,7 +29,9 @@ background-color: #FBFBFB;
 text-align: center;
 margin-bottom: 10px;
 border-radius: 12px; /* runde hjørner */
-padding: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
 margin-left: 40px;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* drop shadow */
 grid-column-start: 1;
@@ -104,7 +106,6 @@ cursor: pointer;
   margin-top: 22px;
 }
 .popup-header {
-  background-color: aqua; 
   width: 1145px;
   height: 127px;
   padding-left: 20px;
@@ -112,10 +113,14 @@ cursor: pointer;
   grid-template-columns: auto auto; /* Adjust the proportion as needed, auto auto splits the space */
   align-items: center; /* Vertically center all items */
   justify-content: space-between; /* Adjust the space between the two sections */
+  margin-bottom: 10px;
+}
+
+.popup-header-text {
+  font-size: 32px;
 }
 
 .left-popup {
-  background-color: blueviolet;
   width: 412px;
   height: 1113px;
   display: grid;                /* Set the display to grid */
@@ -124,7 +129,6 @@ cursor: pointer;
 }
 
 .right-popup {
-  background-color: #333;
   width: 661px;
   height: 1113px;
   display: grid;                    /* Using grid layout */
@@ -136,7 +140,6 @@ cursor: pointer;
 .content-text {
   width: 603px;
   height: 554px;
-  background-color: #f3f3f3;
   justify-self: center; 
 }
 
@@ -172,7 +175,6 @@ cursor: pointer;
 }
 
 .left-popup-age-name {
-background-color: #c6c6c6;
 width: 384px;
 height: 132px;
 }
@@ -181,26 +183,22 @@ height: 132px;
 .left-popup-interestcategory {
   display: grid;
   grid-template-rows: 40px;
-  background-color: #c6c6c6;
   width: 384px;
   height: 157px;
 }
 
 .left-popup-price {
-  background-color: #c6c6c6;
   width: 384px;
   height: 123px;
 }
 
 .left-popup-number-text-attending {
-background-color: #c6c6c6;
 width: 384px;
 height: 150px;
 }
 
 .left-popup-adress {
 display: grid;
-background-color: #c6c6c6;
 width: 384px;
 height: 449px;
 justify-content: start; /* Center the icons as a group (if there's extra space) */
@@ -222,7 +220,6 @@ display: grid;
 grid-template-columns: 128px auto; /* 1fr takes remaining space, auto takes space as needed by content */
 gap: 5px; /* Adjust the gap as needed */
 align-items: center; /* Align items vertically in the center */
-background-color: #c6c6c6;
 width: 384px;
 height: 132px;
 margin: 0 auto; /* Center horizontally */
@@ -233,7 +230,6 @@ display: grid;
 grid-template-columns: 16px auto; /* Allocates enough space for the icon and the number based on their content */
 gap: 5px; /* Sets a 5px gap between the grid items */
 align-items: center; /* Vertically centers the items in their row */
-background-color: aqua;
 justify-content:start;
 padding-left: 2px;
 }
@@ -242,7 +238,6 @@ padding-left: 2px;
 display: grid;
 align-items: start; /* Aligns items to the start vertically */
 justify-content: start; /* Aligns content to the start horizontally */
-background-color: aqua;
 }
 
 .garn-box {
@@ -292,7 +287,6 @@ background-color: aqua;
 .interestcategory-box {
   width: 277px;
   height: 114px;
-  background-color: #FBFBFB;
   margin-left: 9px;
 }
 
@@ -328,14 +322,12 @@ background-color: aqua;
 }
 
 .left-popup-price-top {
-  background-color: beige;
   text-align: start;  /* Aligns text to the start vertically */ 
   height: 15px;
   margin-left: 9px;
 }
 
 .left-popup-price-bottom {
-  background-color: antiquewhite;
   width: 340px;
   text-align: start;  /* Aligns text to the start vertically */ 
   margin-bottom: 15px; 
@@ -369,4 +361,13 @@ background-color: aqua;
 .intro-text {
   width: 580px;
   line-height: 25px;
+}
+
+.popup-line {
+  grid-column: 1 / -1; /* Extend line across all columns */
+  width: 1185px; /* Set the specific width */
+  height: 1px; /* As specified */
+  background-color: #31572C; /* Assuming the line should be green */
+  justify-self: center; /* Center the line horizontally within the grid column */
+  margin-left: -20px;
 }
