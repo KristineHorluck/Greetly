@@ -39,4 +39,8 @@ ul {
     overflow: hidden;
 }
 
+.footer-and-logo {
+    display: flex;
+    
+}
 
