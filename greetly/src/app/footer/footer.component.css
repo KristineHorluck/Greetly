@@ -41,6 +41,17 @@ ul {
 
 .footer-and-logo {
     display: flex;
-    
+    flex-direction: column;
+    gap: 40px;
 }
 
+.footer-and-quote {
+    display: flex;
+    background-color: aqua;
+}
+
+
+.footer-and-greetly {
+    display: flex;
+    flex-direction: column;
+}

@@ -7,6 +7,7 @@
     justify-content: space-between;
     background-color: #fbfbfb;
     padding: 30px;
+}
 
     /* Logo */
 .navbar-logo {
@@ -21,6 +22,6 @@
     align-items: center;
     margin-left: 10px;
 }
-}
+
 
 
