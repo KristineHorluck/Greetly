@@ -101,6 +101,7 @@ cursor: pointer;
   display: grid;
   grid-template-columns: 412px 661px; /* Widths of left and right popup respectively */
   grid-gap: 72px; /* Optional: space between columns */
+  margin-top: 22px;
 }
 .popup-header {
   background-color: aqua; 
@@ -228,10 +229,12 @@ margin: 0 auto; /* Center horizontally */
 
 .age-icon-number {
 display: grid;
-grid-template-columns: 16px 45px; /* Allocates enough space for the icon and the number based on their content */
+grid-template-columns: 16px auto; /* Allocates enough space for the icon and the number based on their content */
 gap: 5px; /* Sets a 5px gap between the grid items */
 align-items: center; /* Vertically centers the items in their row */
 background-color: aqua;
+justify-content:start;
+padding-left: 2px;
 }
 
 .name {
