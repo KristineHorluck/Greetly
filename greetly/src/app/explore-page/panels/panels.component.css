@@ -1,34 +1,41 @@
 .panel {
+    display: grid;
     padding-left: 15px;
     padding-right: 30px;
     padding-top: 17px;
-    display: grid;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-template-columns:322px auto;
-    grid-template-rows: 100px 450px; /* change rows to move footer*/
-    column-gap: 45px;
+    grid-template-rows: 100px 2100px; /* change rows to move footer*/
+    column-gap: 24px;
 }
 
 .left-panel {
-    height: 450px;
+    height: 560px;
     background-color: #fbfbfb;
     border-radius: 7px;
     font-weight: bold;
 } 
 
 .right-panel {
+    display: grid;
+    height: 1517px;
+    row-gap: 24px;
+    background-color: transparent;
+}
+
+.upper-right-panel {
+    display: grid;
     height: 445px;
     width: 1010px;
-    background-color: #afafaf;
+    background-color: #fbfbfb;
     padding: 20px;
-    font-size: 24px;
     font-weight: bold;
     font-family: 'Calibri', sans-serif;
     border-radius: 7px;
 }
 
-.begivenheder {
+.big-text {
     padding: 10px;
     font-size: 36px;
 }
@@ -75,33 +82,29 @@
     height: 245px;
 }
 
-.create-button{
-    padding-left: 10px;
-}
-
 .create-button {
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
-    width: 283px;
-    height: 56px;
-    border-radius: 10px;
-    padding: 0; /* Ensure padding doesn't affect inner link */
-    background-color: #31572C; /* Background color on the container */
-    color: #fbfbfb;
-    
+    align-items: center;  
 }
 
 .create-button-link {
-    display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-    width: 100%; /* Ensure the link covers the entire container area */
-    height: 100%; /* Ensure the link covers the entire container area */
-    color: inherit; /* Optional: Inherits the text color from the parent */
+    width: 293px;
+    height: 56px;
+    color: #fbfbfb;
     text-decoration: none; /* Optional: Removes underline from links */
     font-size: 20px;
+    background-color: #31572C; /* wtf hvorfor skifter den ikke farve*/
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 2px solid #31572C;
+}
+
+.create-button-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .left-panel .create-button{
@@ -110,7 +113,6 @@
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
     padding-left: 10px;
     margin-left: 10px; 
     margin-top: 15px; 
@@ -120,55 +122,37 @@
     padding-top: 5px;
 }
 
+.friends-pic {
+    padding-left: 10px;
+}
+
 .your-events {
-    padding-left: 14px;
-    margin-top: 16px;
-    font-size: 20px;
-    font-family: 'Calibri', sans-serif;
     display: grid;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-template-columns:875px;
-    grid-template-rows:108px 108px 108px; 
-    column-gap: 20px;
-    background-color:aqua;
-    height: 362px;
-}
-
-.your-events {
-    row-gap: 10px;
-}
-
-.attending {
-    background-color: #fbfbfb;
+    grid-template-columns: 154px auto; /* Adjust this to match image width and content width */
+    grid-template-rows: auto 2px auto 2px auto; /* Rows for content and lines */
+    row-gap: 10px; /* Maintaining the 10px gap */
+    background-color: transparent;
+    align-items: start; /* Ensure alignment of items at the start */
+    padding-left: 0; /* Remove padding if present */
 }
 
 .pic{
     width: 154px;
     height: 108px;
 }
-
-.favourites {
-    background-color: #fbfbfb;
-}
-
-.organizer {
-    background-color: #fbfbfb;
-}
-
-.attending, .favourites, .organizer {
-    background-color: #fbfbfb;
-    height: 100%; /* Ensuring each grid item fills the row height */
+.medium-text {
+    font-size: 24px;
+    padding-bottom: 16px;
 }
 
 .attending, .favourites, .organizer {
     display: grid;
-    grid-template-columns: 154px auto;  /* fixed width for the image, flexible space for the box */
-    gap: 27px;  /* Spacing between the image and the box */
-    align-items: start;  /* Align items at the start of the grid container */
-    background-color: #fbfbfb;
+    grid-template-columns: 154px auto;
+    gap: 27px;
+    align-items: start;
+    background-color: transparent;
+    height: 108px;
+    width: 1010px;
 }
 
 .attending-pic, .favourites-pic, .organizer-pic {
@@ -176,19 +160,7 @@
     height: 108px; /* specified height */
 }
 
-.attending-box, .organizer-box {
-    display: grid;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 88px; /* Use full width of the grid column */
-    height: 21px; /* Exact height */
-    background-color: #31572C;
-    color: #fbfbfb;
-    border-radius: 7px;
-    grid-column: 2; /* Explicitly place in the second column */
-}
-
-.favourites-box {
+.favourites-box, .attending-box, .organizer-box{
     display: grid;
     grid-template-columns: auto auto; /* Define two columns */
     justify-content: start; /* Align items to the start of the grid */
@@ -202,19 +174,17 @@
     padding-left: 5px; /* Add some padding inside the box */
     font-weight: bold;
     grid-column: 2; /* Explicitly place in the second column */
+    font-size: 18px;
 }
 
-.favourites-event-icon {
+.favourites-event-icon, .attending.event-icon, .organizer-event-icon{
     width: 14px;
     height: 18.5px;
 }
-.favourites-event-box-text {
+.favourites-event-box-text, .attending-event-box-text, .organizer-event-box-text {
     justify-self: start; /* Start align this text to make it close to the icon */
     font-size: 12px;
 }
-
-
-
 
 .event-box-text {
     font-size: 12px; /* Text styling */
@@ -240,23 +210,315 @@
     font-weight: bold;
 }
 
+.line {
+    grid-column: 1 / -1; /* Extend line across all columns */
+    width: 720px; /* Set the specific width */
+    height: 1px; /* As specified */
+    background-color: #31572C; /* Assuming the line should be green */
+    justify-self: center; /* Center the line horizontally within the grid column */
+    margin-left: 18px;
+}
 
-.new-favourites-box {
+/* JENNIES */
+
+.lower-right-panel{
+    position: relative;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    height: 1000px;
+    width: 1050px;
+}
+
+/* Filters */
+.filter-container {
     display: grid;
-    grid-template-columns: auto auto; /* Define two columns */
-    justify-content: start; /* Align items to the start of the grid */
-    gap: 10px; /* Space between the icon and text */
-    align-items: center; /* Center items vertically */
-    width: 88px; /* Adjust width as needed, or keep as is */
-    height: 21px; /* Exact height */
-    background-color: #31572C;
-    color: #fbfbfb;
-    border-radius: 7px;
-    padding-left: 5px; /* Add some padding inside the box */
-    font-weight: bold;
-    grid-column: 2; /* Explicitly place in the second column */
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 36px; /* Gap between the filter-items*/
+    margin-bottom: 20px; /* Add margin to separate from cards */
+    background-color: #fbfbfb;
+    margin: 15px;
 }
 
-.new-event-box-text {
+.filter-item {
+    display: grid;
+    background-color: #fbfbfb;
+    border-radius: 3px;
+    border: 1.5px solid #31572C; /* Add border */
+    color: #4c4c4c;
+    width: 170px;
+    grid-template-columns: auto 1fr; /* Image takes up auto width, text takes up remaining width */
+    align-items: center;
     font-size: 12px;
+    grid-template-columns: auto auto; /* Define two columns */
+    justify-content: center;
 }
+
+
+.filter-item:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+ /* Cards */
+ .container {
+    width: auto;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+    justify-items: center;
+    background-color: #fbfbfb;
+    height: 725px;
+}
+
+.cards{
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    display: block;
+    width: 320px;
+    height: auto;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%; /* Limit the width of the image to 100% of its container */
+    display: block; /* Ensure the image behaves as a block element */ 
+    height: auto; /* Set a fixed height for the container */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.content{
+    line-height: 7px;
+    padding-bottom: 20px;
+    margin-left: 7px;
+    color: #6A6A6A; 
+}
+
+.content h3{
+    color: #3D3D3D;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.content p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.more-button {
+    position: absolute; /* Gør knappen absolut positioneret */
+    bottom: 10px; /* Afstand fra bunden */
+    right: 10px; /* Afstand fra højre */
+    color: #000000;
+    font-weight: lighter;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.explore-events h2 {
+    margin-left: 15px;
+}
+
+.show-button {
+    width: 75px;
+    height: 35px;
+    border-radius: 60px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    background-color: transparent;
+    color: #31572C;
+}
+
+.center-show-button {
+    display: grid;
+    width: 1050px;
+    justify-content: center; /* Center vertically */
+}
+
+.show-button:hover {
+    background-color: #31572C;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+ /* IDAS CODE 
+ /* Style for the modal */
+.modal {
+    display: none; /* Skjul modal som standard if we want it infront to begin with write 'block' */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Baggrundsfarve og gennemsigtighed */
+  }
+  
+  /* Style for the modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centrer modalen vertikalt og 15% fra toppen */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; /* 80% af vinduets bredde */
+    border-radius: 8px;
+  }
+  
+  /* Style for close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Custom styling for radio buttons */
+  input[type="radio"] {
+    display: none; /* Skjul radio-knapperne */
+  }
+  
+  .custom-radio {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #31572C;
+    opacity: 0.6;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .custom-radio:hover {
+    opacity: 0.8;
+  }
+  
+input[type="text"]{
+    width: 90%;
+    border: none;
+    background-color: #f1f1f1f1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 90%;
+    border: none;
+    background-color: #f1f1f1f1;
+    border-radius: 8px;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+  /* Style for radio buttons when checked */
+  input[type="radio"]:checked + .custom-radio {
+    background-color: #31572C;
+    opacity: 1;
+  }
+
+  /* Style for buttons */
+  .opretbtn {
+    background-color: #31572C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-right: 10px;
+  }
+
+  .opretbtn:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    background-color: #31572C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 97.5%;
+    opacity: 0.6;
+    border: none;
+  }
+
+  .cancelbtn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Style for horizontal line */
+  hr {
+    border: 0.5px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox styling for button container */
+  .flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .botton-container {
+    margin-top: 20px;
+  }
+  
+
+  .custom-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px; /* centreret 50/50 (på hver side) */
+    margin-right: 20px; /* Just for spacing */
+    cursor: pointer;
+  }
+  
+  .custom-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px; /* Just an example value */
+    height: 20px; /* Just an example value */
+    border-radius: 8px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group div {
+    margin-top: 5px;
+  }
+
+.image-upload {
+    margin: 8px;
+}
+    

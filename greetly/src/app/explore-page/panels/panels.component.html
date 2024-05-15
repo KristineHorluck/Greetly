@@ -1,7 +1,8 @@
+
 <div class="panel">
     
     <div class="left-panel">
-        <div class="begivenheder">Begivenheder</div>
+        <div class="big-text">Begivenheder</div>
 
         <div class="search">
             <input class="search-input" type="search" placeholder="Søg efter begivenheder">
@@ -9,83 +10,345 @@
 
         <div class="categories">Kategorier
             <div class="category-buttons">
-                <a class="cetagory-pictures"><img src="assets/category-icon.png" alt="Categories" style="width: 260px;"></a>
+                <a class="category-pictures"><img src="assets/category-icon.png" alt="Categories" style="width: 260px;"></a>
             </div>
             <div class="floating-scrollbar"></div> 
         </div>
 
-        <div class="create-button">
+       <!--  <div class="create-button">
             <a mat-flat-button href="https://www.google.com/" target="_blank" class="create-button-link">Opret ny begivenhed</a>
+        </div> -->
+        <!-- <div class="create-button">
+            <button class="create-button-link" onclick="openForm()">Opret ny begivenhed</button>
+        </div> -->
+        <div class="create-button">
+            <button class="create-button-link" onclick="document.getElementById('id01').style.display='block'">Opret ny begivenhed</button>
         </div>
 
+        <div class="friends">
+            <div class="big-text">Venner</div>
+            <div class="friends-pic">
+                <a class="friend-profile-pic"><img src="assets/friends-pic.svg" alt="Friends-profile-pic" ></a>
+            </div>
+        </div>
     </div>
-
     <div class="right-panel">
-        Dine begivenheder
-        <div class="your-events">
-
-            <div class="attending">
-                <div class="left-attending">
-                    <div class="attending-pic">
-                        <a routerLink="/attending" class="pic"><img src="assets/attending-pic.png" alt="Attending" ></a>
-                    </div>
-                </div>
-                <div class="right-attending">
-                    <div class="attending-box">
-                        <div class="attending-icon-box">
-                            <div class="attending-icon-box"></div>
-                            <div class="event-box-text">Deltager</div>
-                        </div>               
-                    </div>
-                    <div class="date">ON. 3. APRIL KL. 19:00</div>
-                    <div class="event-discription">Fælles drink aften</div>
-                    <div class="address">Borgers Vej 57, 4.tv, 9000 Aalborg</div>
-                </div>
-            </div>
-
-            <div class="favourites">
-                <div class="right-favourites">
-                    <div class="favourites-pic">
-                        <a routerLink="/favourites" class="pic"><img src="assets/favourites-pic.png" alt="Favourites"></a>
-                    </div>
-                </div>
-                <div class="left-favourites">   
-                    <div class="favourites-box">
-                        <div class="favourites-icon">
-                            <a routerLink="/favourites-icon" class="favourites-event-icon"><img src="assets/favourites-icon.svg" alt="Favourites"></a>
+        <div class="upper-right-panel">
+            <div class="medium-text">Dine begivenheder</div>
+            <div class="your-events">
+    
+                <div class="attending">
+                    <div class="left-attending">
+                        <div class="attending-pic">
+                            <a routerLink="/attending" class="pic"><img src="assets/attending-pic.png" alt="Attending" ></a>
                         </div>
-                        <div class="favourites-event-box-text">Favoritter</div>
-                    </div>                
-                    <div class="date">ON. 10. APRIL KL. 15:00</div>
-                    <div class="event-discription">Strikkeeftermiddag</div> 
-                    <div class="address">Egevænget 89, 3660 Liseleje</div>
-                </div>
-            </div>
-            <div class="organizer">
-                <div class="left-organizer">
-                    <div class="organizer-pic">
-                        <a routerLink="/organizer" class="pic"><img src="assets/organizer-pic.png" alt="Organizer"></a>
+                    </div>
+                    <div class="right-attending">
+                        <div class="attending-box">
+                            <div class="attending-icon">
+                                <a routerLink="/attending-icon" class="attending-event-icon"><img src="assets/attending-icon.svg" alt="Attending"></a>
+                            </div>
+                            <div class="attending-event-box-text">Attending</div>
+                        </div>    
+                        <div class="date">ON. 3. APRIL KL. 19:00</div>
+                        <div class="event-discription">Fælles drink aften</div>
+                        <div class="address">Borgers Vej 57, 4.tv, 9000 Aalborg</div>
                     </div>
                 </div>
-                <div class="right-organizer">
-                    <div class="organizer-box">
-                        <div class="organizer-icon-box">
-                            <div class="organizer-icon"></div>
-                            <div class="event-box-text">Arrangør</div>
+    
+                <div class="line"></div>
+    
+                <div class="favourites">
+                    <div class="right-favourites">
+                        <div class="favourites-pic">
+                            <a routerLink="/favourites" class="pic"><img src="assets/favourites-pic.png" alt="Favourites"></a>
                         </div>
-                    </div> 
-                    <div class="date">FR. 24. MAJ KL. 18:00</div>
-                    <div class="event-discription">Fælles drink aften</div>
-                    <div class="address">Suesongade 89, 9000 Aalborg</div>
-                </div>  
+                    </div>
+                    <div class="left-favourites">   
+                        <div class="favourites-box">
+                            <div class="favourites-icon">
+                                <a routerLink="/favourites-icon" class="favourites-event-icon"><img src="assets/favourites-icon.svg" alt="Favourites"></a>
+                            </div>
+                            <div class="favourites-event-box-text">Favoritter</div>
+                        </div>                
+                        <div class="date">ON. 10. APRIL KL. 15:00</div>
+                        <div class="event-discription">Strikkeeftermiddag</div> 
+                        <div class="address">Egevænget 89, 3660 Liseleje</div>
+                    </div>
+                </div>
+    
+                <div class="line"></div>
+    
+                <div class="organizer">
+                    <div class="left-organizer">
+                        <div class="organizer-pic">
+                            <a routerLink="/organizer" class="pic"><img src="assets/organizer-pic.png" alt="Organizer"></a>
+                        </div>
+                    </div>
+                    <div class="right-organizer">
+                        <div class="organizer-box">
+                            <div class="organizer-icon">
+                                <a routerLink="/organizer-icon" class="organizer-event-icon"><img src="assets/organizer-icon.svg" alt="Organizer"></a>
+                            </div>
+                            <div class="organizer-event-box-text">Organizer</div>
+                        </div>  
+                        <div class="date">FR. 24. MAJ KL. 18:00</div>
+                        <div class="event-discription">Fælles drink aften</div>
+                        <div class="address">Suesongade 89, 9000 Aalborg</div>
+                    </div>  
+                </div>
+    
+                <div class="line"></div>
+    
             </div>
-        </div>
-    </div>   
-    <div class="new-favourites-box">
-        <div class="new-favourites-icon">
-            <a routerLink="/favourites-icon" class="event-icon"><img src="assets/favourites-icon.svg" alt="Favourites"></a>
-        </div>
-        <div class="new-event-box-text">Favoritter</div>
+
+        </div> 
+        <!-- JENNIES Her slutter explore-cards -->  
+        <div class="lower-right-panel">
+            <div class="explore-events">
+                <h2>Opdag Begivenheder</h2>
+                <div class="filter-container">
+                    <div class="filter-item">
+                        <div class="filter-pic">
+                            <img src="assets/min-lokation.svg" alt="Image" style="height:20px; width: 30px;">
+                        </div>
+                       <div class="filter-text">Min lokation</div>
+                     </div>
+                    <div class="filter-item">
+                        <img src="assets/dato.svg" alt="Image" style="height:20px; width: 30px;">Dato
+                    </div>
+                    <div class="filter-item">
+                        <img src="assets/tidspunkt.svg" alt="Image" style="height:20px; width: 30px;">Tidspunkt
+                    </div>
+                    <div class="filter-item">
+                        <img src="assets/venner.svg" alt="Image" style="height:20px; width: 30px;">Venner
+                    </div>
+                    <div class="filter-item">
+                        <img src="assets/interesser.svg" alt="Image" style="height:30px; width: 30px;">Interesser
+                    </div>
+                </div>
+                <div class="container"> 
+                    <div class="cards">
+                        <div class="image-section img-one">
+                            <img src="assets/img-one.jpg" alt="Image" style="height:222px; width: 355px;">
+                        </div>
+                        <div class="content">
+                            <p>LØ. 2. JUNI KL 19:00</p>
+                            <h3>Klatring</h3>
+                            <p>9000, Aalborg (Lokation kommer)</p>
+                            <a href="https://www.google.com/" class="more-button">Læs mere..</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-section img-two">
+                            <img src="assets/img-two.jpeg" alt="Image" style="height:222px; width: 355px;">
+                        </div>
+                        <div class="content">
+                            <p>SØ. 31. JUNI KL 12:00</p>
+                            <h3>Keramikkursus</h3>
+                            <p>9000, Aalborg (Lokation kommer)</p>
+                            <a href="https://www.google.com/" class="more-button">Læs mere..</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-section img-three">
+                            <img src="assets/img-three.jpeg" alt="Image" style="height:222px; width: 355px;">
+                        </div>
+                        <div class="content">
+                            <p>LØ. 6. JULI KL 13:00</p>
+                            <h3>Vandretur - Egholm rundt</h3>
+                            <p>9000, Aalborg (Lokation kommer)</p>
+                            <a href="https://www.google.com/" class="more-button">Læs mere..</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-section img-one">
+                            <img src="assets/tennis.jpeg" alt="Image" style="height:222px; width: 355px;">
+                        </div>
+                        <div class="content">
+                            <p>LØ. 2. JULI KL 15:00</p>
+                            <h3>Tennis</h3>
+                            <p>9000, Aalborg (Lokation kommer)</p>
+                            <a href="https://www.google.com/" class="more-button">Læs mere..</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-section img-two">
+                            <img src="assets/picnic.jpeg" alt="Image" style="height:222px; width: 355px;">
+                        </div>
+                        <div class="content">
+                            <p>SØ. 10. JULI KL 12:00</p>
+                            <h3>Grillhygge i Østre Anlæg</h3>
+                            <p>9000, Aalborg, Bonnensensgade (ved indgangen)</p>
+                            <a href="https://www.google.com/" class="more-button">Læs mere..</a>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="image-section img-three">
+                            <img src="assets/bowling.jpeg" alt="Image" style="height:222px; width: 355px;">
+                        </div>
+                        <div class="content">
+                            <p>MA. 11. JULI KL 13:00</p>
+                            <h3>Bowling i Seaport</h3>
+                            <p>9000, Aalborg, Strandvejen 7</p>
+                            <a href="https://www.google.com/" class="more-button">Læs mere..</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-show-button">
+                <button class="show-button" type="submit">Se flere</button>
+            </div>
+        </div> 
+
     </div>
 </div>
 
+<!-- IDAS popup opret begivenhed -->
+
+<div id="id01" class="modal">
+    <div class="flex-container" style="padding-bottom: 200px;">
+      <div class="modal-content">
+        <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+        <h1>Opret begivenhed</h1>
+        <hr> <!-- hrizontal line -->
+        <form action="/action_page.php" method="post" class="modal-form"> <!-- udfyld felter opret bruger -->
+  
+          <div class="form-group">
+              <label for="billede"><b>Billede</b></label>
+              <div class="image-upload">
+                  <input id="upload" type="file" name="billede" accept="image/*">
+              </div>
+          </div>
+  
+  
+      <div> <label for="overskrift"></label><b>Overskrift</b>
+      <input type="text" id="overskrift" placeholder="Hvad hedder din begivenhed?"> 
+      </div>
+  
+      <div> <label for="beskrivelse"></label><b>Beskrivelse</b>
+          <textarea name="beskrivelse" id="beskrivelse" cols="40" rows="5" placeholder="Beskriv din begivenhed"></textarea>
+      </div>
+  
+  
+      <div> <label for="interessekategori"></label><b>Interessekategori</b>
+      <input type="text" id="interessekategori" placeholder="F.eks. sport, kreativt, strikkeklub, osv..">
+      </div>
+  
+      <br> <!-- line break -->
+  
+          <div class="form-group">
+              <label for="tidspunkt"><b>Tidspunkt</b></label>
+              <label for="spørgsmål"><i>Vil du tilføje et tidspunkt til din begivenhed?</i></label>
+           <div>
+              <input type="radio" id="jaTid" name="tidvalg" onclick="document.getElementById('TidInput').style.display='block'">
+              <label for="jaTid" class="custom-radio">Ja</label>
+             
+              <input type="radio" id="nejTid" name="tidvalg" onclick="document.getElementById('TidInput').style.display='none'" checked>
+              <label for="nejTid" class="custom-radio">Nej</label>
+          </div>
+              
+              <div id="TidInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                  Dato: <input type="date">
+                  Start: <input type="time">
+                  Slut: <input type="time">
+              </div>
+          </div>
+  
+          <div class="form-group">
+              <label for="Sted"><b>Sted</b></label>
+              <label for="spørgsmål"><i>Vil du tilføje en adresse?</i></label>
+              <div>
+                  <input type="radio" id="jaSted" name="Stedvalg" onclick="document.getElementById('StedInput').style.display='block'">
+                  <label for="jaSted" class="custom-radio">Ja</label>
+                 
+                  <input type="radio" id="nejSted" name="Stedvalg" onclick="document.getElementById('StedInput').style.display='none'" checked>
+                  <label for="nejSted" class="custom-radio">Nej</label>
+              </div>
+              <div id="StedInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                  <input type="text" placeholder="Vejnavn, nr, etage" style="width: 90%;">
+                  <input type="text" placeholder="By og postnummer" style="width: 90%;">
+                 <div> <i>Område vises på kort under begivenheden</i> </div>
+                  <div> <input type="checkbox"><i>Kan ses af alle</i> </div>
+                  <div> <input type="checkbox"><i>Kan ses af tilmeldte</i></div>
+                  <div> <input type="checkbox"><i>Kan ses af tilmeldte 1 døgn før </i> </div>
+              </div>
+          </div>
+          
+          <div class="form-group">
+              <label for="aldersgruppe"><b>Målgruppe</b></label>
+              <label for="spørgsmål"><i>Er det for en bestemt målgruppe?</i></label>
+              <div>
+                  <input type="radio" id="jaAlder" name="Aldervalg" onclick="document.getElementById('AlderInput').style.display='block'">
+                  <label for="jaAlder" class="custom-radio">Ja</label>
+                 
+                  <input type="radio" id="nejAlder" name="Aldervalg" onclick="document.getElementById('AlderInput').style.display='none'" checked>
+                  <label for="nejAlder" class="custom-radio">Nej</label>
+              </div>
+              <div id="AlderInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                 Min: <input type="number" placeholder="alder">
+                 Max: <input type="number" placeholder="alder">
+                 <div>
+                  <input type="checkbox" name="type" value="1">Kvinder
+                  <input type="checkbox" name="type" value="2">Mænd
+                  <input type="checkbox" name="type" value="3">Alle
+                </div>
+              </div>
+            
+          </div>
+  
+          <div class="form-group">
+              <label for="tilmelding"><b>Tilmelding</b></label>
+              <label for="spørgsmål"><i>Er der et begrænset antal tilmeldte?</i></label>
+           <div>
+              <input type="radio" id="jaTilmeld" name="TilmeldingValg" onclick="document.getElementById('TilmeldInput').style.display='block'">
+              <label for="jaTilmeld" class="custom-radio">Ja</label>
+             
+              <input type="radio" id="nejTilmeld" name="TilmeldingValg" onclick="document.getElementById('TilmeldInput').style.display='none'" checked>
+              <label for="nejTilmeld" class="custom-radio">Nej</label>
+          </div>
+              
+              <div id="TilmeldInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                  Min: <input type="number"  placeholder="antal">
+                  Max: <input type="number"  placeholder="antal">
+              </div>
+          </div>
+  
+  
+          <div class="form-group">
+              <label for="pris"><b>Pris</b></label>
+              <label for="spørgsmål"><i>Koster det at deltage?</i></label>
+           <div>
+              <input type="radio" id="jaPris" name="Prisvalg" onclick="document.getElementById('PrisInput').style.display='block'">
+              <label for="jaPris" class="custom-radio">Ja</label>
+             
+              <input type="radio" id="nejPris" name="Prisvalg" onclick="document.getElementById('PrisInput').style.display='none'" checked>
+              <label for="nejPris" class="custom-radio">Nej</label>
+          </div>
+              
+              <div id="PrisInput" style="display: none; padding: 10px; padding-bottom: 12px;">
+                  <label for="fast pris"><i>Fast pris:</i></label>
+                  <input type="number" style="width: 40px; margin-left: 4px;"> kr.
+                  <div>
+                      <label for="pris"><i>Ca. pris:</i></label>
+                  <input type="number" placeholder="min" style="width: 40px; margin-left: 4px;"> kr.
+                  <input type="number" placeholder="max" style="width: 40px; margin-left: 4px;"> kr.
+                  </div>
+              </div>
+          </div>
+          
+          <div>
+            <div class="flexbox"> 
+              <button type="submit" class="opretbtn" style="margin-bottom: 15px; width: 100%; margin-top: 10px;">Opret begivenhed</button>
+              <label style="display: block; border-bottom: 1px solid black;"></label>   <!-- horizontal linje -->
+            </div>
+            <hr>
+            <div class="flexbox">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Luk siden</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
