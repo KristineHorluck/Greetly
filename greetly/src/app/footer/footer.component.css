@@ -1,4 +1,5 @@
 .footer {
+    display: flex;
     position: static;
     bottom: 0;
     width: 100%;
@@ -7,7 +8,6 @@
     text-align: center;
     padding: 10px;
     bottom: 0;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -18,25 +18,34 @@
     height: 100%;
     display: inline-flex;
     margin-left: 124px;
-    margin-top: 13px;
-    
+
 }
 
 .footer-info-left-text, 
 .footer-info-right-text{
     padding-top: 13px;
+    font-size: 18px;
+    color:#31572C;
 }
 
 .footer-logo {
     width: 30px;
     height: 30px;
+    margin: 10px;
 }
-
 ul {
     list-style-type: none;
-    margin: 01;
+    margin: 0; /* Corrected margin value */
     padding: 0;
     overflow: hidden;
+}
+
+ul li {
+    margin-bottom: 12px; /* Add 17px space between the list items */
+}
+
+ul li:last-child {
+    margin-bottom: 0; /* Remove margin from the last list item */
 }
 
 .footer-and-logo {
@@ -47,11 +56,25 @@ ul {
 
 .footer-and-quote {
     display: flex;
-    background-color: aqua;
+    flex-direction: row;
 }
 
+.footer-quote {
+    align-content: center;
+    margin-left: 75px;
+}
 
 .footer-and-greetly {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+}
+
+.greetly {
+    padding-top: 35px;
+    padding-left: 76px;
+    margin-bottom: 45px;
+}
+
+.footer-and-quote {
+    border-top: 1px solid #31572C;
 }
