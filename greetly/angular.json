@@ -66,6 +66,7 @@
               "buildTarget": "greetly:build:production"
             },
             "development": {
+              "proxyConfig": "src/proxy.conf.json",
               "buildTarget": "greetly:build:development"
             }
           },
