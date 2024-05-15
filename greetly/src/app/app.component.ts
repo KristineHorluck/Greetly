@@ -9,12 +9,14 @@ import { PanelLeftComponent } from './explore-page/panels/panel-left/panel-left.
 import { PanelRightComponent } from './explore-page/panels/panel-right/panel-right.component';
 import { ScrollBarComponent } from './explore-page/panels/panel-left/scroll-bar/scroll-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet],
+  imports: [CommonModule, LoginPageComponent, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
