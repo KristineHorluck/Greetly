@@ -6,7 +6,7 @@
     grid-row-start: 1;
     grid-row-end: 2;
     grid-template-columns:322px auto;
-    grid-template-rows: 100px 2100px; /* change rows to move footer*/
+    grid-template-rows: 100px 1600px; /* change rows to move footer*/
     column-gap: 24px;
 }
 
