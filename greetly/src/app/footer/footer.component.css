@@ -1,9 +1,15 @@
-.footer-info {
-    position: bottom;
+.footer {
+    display: flex;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #31572C;
     background-color: #fbfbfb;
     text-align: center;
     padding: 10px;
-  }
+    bottom: 0;
+    justify-content: space-between;
+}
 
 .footer-info-right,
 .footer-info-left {
@@ -11,12 +17,64 @@
     border-left: 1px solid #31572C;
     height: 100%;
     display: inline-flex;
+    margin-left: 124px;
+
 }
 
+.footer-info-left-text, 
+.footer-info-right-text{
+    padding-top: 13px;
+    font-size: 18px;
+    color:#31572C;
+}
+
+.footer-logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
 ul {
     list-style-type: none;
-    margin: 01;
+    margin: 0; /* Corrected margin value */
     padding: 0;
     overflow: hidden;
+}
 
+ul li {
+    margin-bottom: 12px; /* Add 17px space between the list items */
+}
+
+ul li:last-child {
+    margin-bottom: 0; /* Remove margin from the last list item */
+}
+
+.footer-and-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-and-quote {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-quote {
+    align-content: center;
+    margin-left: 75px;
+}
+
+.footer-and-greetly {
+    display: flex;
+    flex-direction: column; 
+}
+
+.greetly {
+    padding-top: 35px;
+    padding-left: 76px;
+    margin-bottom: 45px;
+}
+
+.footer-and-quote {
+    border-top: 1px solid #31572C;
 }
