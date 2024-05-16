@@ -366,7 +366,7 @@
     margin: 15% auto; /* Centrer modalen vertikalt og 15% fra toppen */
     padding: 20px;
     border: 1px solid #888;
-    width: 35%; /* 80% af vinduets bredde */
+    width: 100%; /* 80% af vinduets bredde */
     border-radius: 8px;
   }
   
@@ -522,3 +522,381 @@ textarea{
     margin: 8px;
 }
     
+/* popup begivenhed */
+label {
+  display: block; /* Viser label som et blokelement */
+  margin-bottom: 5px; /* Afstand under label */ }
+
+.psw {
+display: block; /* Ændrer til blok for at stå på sin egen linje */
+}
+
+/* Global styles */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+/* Flexbox styles for form and image container */
+.flex-container {
+display: grid;
+justify-content: center;
+align-items: center;
+
+}
+
+/* login container styles */
+.popup-container {
+width: 1145px;
+height: 1279px;
+background-color: white;
+text-align: center;
+margin-bottom: 10px;
+border-radius: 12px; /* runde hjørner */
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 20px;
+margin-left: 40px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* drop shadow */
+grid-column-start: 1;
+grid-column-end: 2;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+
+/* Input and button styles */
+input[type=text], input[type=password], button {
+width: 100%;
+padding: 12px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+button {
+  background-color: #31572C;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 17px;
+  width: 202px;
+  height: 47px;
+  font-size: 20px;
+  grid-row: 3;        /* Position button in the third row */
+  justify-self: right; /* Center horizontally in its cell */
+  margin-right: 23px;
+}
+
+button:hover {
+opacity: 0.8;
+}
+/* opret bruger pop-up styles */
+.popup-modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+padding-top: 50px;
+} 
+
+.popup-modal-content {
+background-color: #FBFBFB;
+margin: 5% auto;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+width: 25%;
+}
+
+.close {
+position: absolute;
+right: 35px;
+top: 15px;
+font-size: 30px;
+color: #333;
+cursor: pointer;
+}
+
+.popup-panels {
+  display: grid;
+  grid-template-columns: 412px 661px; /* Widths of left and right popup respectively */
+  grid-gap: 72px; /* Optional: space between columns */
+  margin-top: 22px;
+}
+.popup-header {
+  width: 1145px;
+  height: 127px;
+  padding-left: 20px;
+  display: grid; /* Use grid layout */
+  grid-template-columns: auto auto; /* Adjust the proportion as needed, auto auto splits the space */
+  align-items: center; /* Vertically center all items */
+  justify-content: space-between; /* Adjust the space between the two sections */
+  margin-bottom: 10px;
+}
+
+.popup-header-text {
+  font-size: 32px;
+}
+
+.left-popup {
+  width: 412px;
+  height: 1113px;
+  display: grid;                /* Set the display to grid */
+  place-items: center;          /* Shortcut to align items centrally both horizontally and vertically */
+  grid-gap: 10px;  
+  background-color: #FBFBFB;  
+  border-radius: 12px;
+}
+
+.right-popup {
+  width: 661px;
+  height: 1113px;
+  display: grid;                    /* Using grid layout */
+  grid-template-rows: auto 1fr auto; /* Three rows: for the content, spacing, and the button */
+  grid-template-columns: 100%;      /* Full width */
+  place-items: center;              /* Center items horizontally */
+  background-color: #FBFBFB;  
+  border-radius: 12px;
+}
+
+.content-text {
+  width: 603px;
+  height: 554px;
+  justify-self: center; 
+}
+
+.right-popup-pic {
+    position: relative; /* Make this a positioning context */
+    display: grid; /* Use grid layout if necessary */
+    width: 100%; /* Ensures it takes the full width of its parent */
+    height: auto; /* Height is as tall as its content */
+}
+
+.popup-event-pic {
+    grid-area: 1 / 1 / 2 / 2; /* Covers the entire grid */
+    border-radius: 15px;
+}
+
+.payment-icon {
+    position: absolute; /* Positioned absolutely within relative container */
+    right: 25px; /* Place it 10px from the right edge */
+    top: 10px; /* Place it 10px from the bottom edge */
+    z-index: 10; /* Ensure it's on top */
+}
+
+.popup-header-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
+  gap: 29px; /* Adds a 29px gap between each icon */
+  justify-content: center; /* Center the icons as a group (if there's extra space) */
+  align-items: center; /* Vertically centers the icons */
+}
+
+.popup-header .popup-header-icons {
+  margin-right: 39px;
+}
+
+.left-popup-age-name {
+width: 384px;
+height: 132px;
+}
+
+
+.left-popup-interestcategory {
+  display: grid;
+  grid-template-rows: 40px;
+  width: 384px;
+  height: 157px;
+}
+
+.left-popup-price {
+  width: 384px;
+  height: 123px;
+}
+
+.left-popup-number-text-attending {
+width: 384px;
+height: 150px;
+}
+
+.left-popup-adress {
+display: grid;
+width: 384px;
+height: 449px;
+justify-content: start; /* Center the icons as a group (if there's extra space) */
+align-items: start; /* Vertically centers the icons */
+}
+
+.map {
+    width: 354px;
+    height: 356px;
+    margin-left: 9px;
+}
+
+.left-popup-age-name, .left-popup-interestcategory, .left-popup-price, .left-popup-number-text-attending, .left-popup-adress {
+margin: 0 auto; /* Centers horizontally */
+}
+
+.left-popup-age-name {
+display: grid;
+grid-template-columns: 128px auto; /* 1fr takes remaining space, auto takes space as needed by content */
+gap: 5px; /* Adjust the gap as needed */
+align-items: center; /* Align items vertically in the center */
+width: 384px;
+height: 132px;
+margin: 0 auto; /* Center horizontally */
+}
+
+.age-icon-number {
+display: grid;
+grid-template-columns: 16px auto; /* Allocates enough space for the icon and the number based on their content */
+gap: 5px; /* Sets a 5px gap between the grid items */
+align-items: center; /* Vertically centers the items in their row */
+justify-content:start;
+padding-left: 2px;
+}
+
+.name {
+display: grid;
+align-items: start; /* Aligns items to the start vertically */
+justify-content: start; /* Aligns content to the start horizontally */
+}
+
+.garn-box {
+  display: grid;
+  border-radius: 60px;
+  border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+  width: 85px;
+  height: 35px;
+  align-content: center;
+  font-size: 15px;
+  color: #4D4D4F;
+}
+
+.krea-box {
+  display: grid;
+  border-radius: 60px;
+  border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+  width: 78px;
+  height: 35px;
+  align-content: center;
+  font-size: 15px;
+  color: #4D4D4F;
+}
+
+.bekendtskaber-box {
+  display: grid;
+  border-radius: 60px;
+  border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+  width: 168px;
+  height: 35px;
+  align-content: center;
+  font-size: 15px;
+  color: #4D4D4F;
+}
+
+.får-box {
+  display: grid;
+  border-radius: 60px;
+  border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+  width: 70px;
+  height: 35px;
+  align-content: center;
+  font-size: 15px;
+  color: #4D4D4F;
+}
+
+.interestcategory-box {
+  width: 277px;
+  height: 114px;
+  margin-left: 9px;
+}
+
+.row1 {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-rows: 40px;
+  grid-template-columns: 87px 80px;
+  padding-top: 17px;
+  column-gap: 6px;
+}
+
+.row2 {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-rows: 47px;
+  grid-template-columns: 170px 72px;
+  padding-top: 10px;
+  column-gap: 6px;
+}
+
+.popup-interestcategory {
+  display: grid;
+  height: 22px;
+  justify-content: start; /* Aligns content to the start horizontally */
+  margin-left: 9px;
+}
+
+.left-popup-price-top {
+  text-align: start;  /* Aligns text to the start vertically */ 
+  height: 15px;
+  margin-left: 9px;
+}
+
+.left-popup-price-bottom {
+  width: 340px;
+  text-align: start;  /* Aligns text to the start vertically */ 
+  margin-bottom: 15px; 
+  color: #4D4D4F;
+  margin-left: 9px;
+}
+
+.left-popup-number-text-attending {
+  text-align: start;  /* Aligns text to the start vertically */ 
+}
+
+.number-text-attending {
+  display: grid;
+  margin-left: 9px;
+  grid-template-rows: 40px 40px 40px;
+}
+
+.left-popup-adress-text {
+  text-align: start;
+  margin-left: 9px;
+}
+
+.adress-time {
+  color: #4D4D4F;
+}
+
+.content-text {
+  text-align: start;
+}
+
+.intro-text {
+  width: 580px;
+  line-height: 25px;
+}
+
+.popup-line {
+  grid-column: 1 / -1; /* Extend line across all columns */
+  width: 1185px; /* Set the specific width */
+  height: 1px; /* As specified */
+  background-color: #31572C; /* Assuming the line should be green */
+  justify-self: center; /* Center the line horizontally within the grid column */
+  margin-left: -20px;
+}
