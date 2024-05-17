@@ -132,7 +132,7 @@
 
 .number-box {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: 77.97px 124.77px 114.7px 129.56px; /* adjusted to the sizes from stats-box */
     gap: 1px;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -187,14 +187,19 @@
     width: 410px;
     height: 101px;
     margin-left: 510px;
-    margin-top: -125px;
-
+    margin-top: -140px;
+    padding-bottom: 10px;
+    gap: 5px;
 }
 
-.biografi-heading {
-    margin-top: -16px;
+.biograf {
+    height: 20px;
 }
 
+.bio-tekst {
+    display: grid;
+    gap: -40px;
+}
 /*Interesser */
 
 .interesser-box {
