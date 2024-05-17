@@ -525,7 +525,7 @@ textarea{
 /* popup begivenhed */
 label {
   display: block; /* Viser label som et blokelement */
-  margin-bottom: 5px; /* Afstand under label */ }
+  margin-bottom: 4px; /* Afstand under label */ }
 
 .psw {
 display: block; /* Ændrer til blok for at stå på sin egen linje */
@@ -543,21 +543,20 @@ padding: 0;
 display: grid;
 justify-content: center;
 align-items: center;
-
 }
 
 /* login container styles */
 .popup-container {
-width: 1145px;
-height: 1279px;
+width: 916px;
+height: 1023px;
 background-color: white;
 text-align: center;
-margin-bottom: 10px;
-border-radius: 12px; /* runde hjørner */
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 20px;
-margin-left: 40px;
+margin-bottom: 8px;
+border-radius: 9.6px; /* runde hjørner */
+padding-left: 16px;
+padding-right: 16px;
+padding-bottom: 16px;
+margin-left: 235px;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* drop shadow */
 grid-column-start: 1;
 grid-column-end: 2;
@@ -568,8 +567,8 @@ grid-row-end: 3;
 /* Input and button styles */
 input[type=text], input[type=password], button {
 width: 100%;
-padding: 12px;
-margin: 8px 0;
+padding: 9.6px;
+margin: 6.4px 0;
 display: inline-block;
 border: 1px solid #ccc;
 box-sizing: border-box;
@@ -580,13 +579,13 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 17px;
-  width: 202px;
-  height: 47px;
-  font-size: 20px;
+  border-radius: 13.6px;
+  width: 161.6px;
+  height: 37.6px;
+  font-size: 16px;
   grid-row: 3;        /* Position button in the third row */
   justify-self: right; /* Center horizontally in its cell */
-  margin-right: 23px;
+  margin-right: 18.4px;
 }
 
 button:hover {
@@ -603,72 +602,71 @@ width: 100%;
 height: 100%;
 overflow: auto;
 background-color: rgba(0, 0, 0, 0.4);
-padding-top: 50px;
+padding-top: 40px;
 } 
 
 .popup-modal-content {
 background-color: #FBFBFB;
-margin: 5% auto;
-padding: 20px;
-border-radius: 8px;
+margin: 4% auto;
+padding: 16px;
+border-radius: 6.4px;
 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-width: 25%;
+width: 20%;
 }
 
 .close {
 position: absolute;
-right: 35px;
-top: 15px;
-font-size: 30px;
+right: 28px;
+top: 12px;
+font-size: 24px;
 color: #333;
 cursor: pointer;
 }
 
 .popup-panels {
   display: grid;
-  grid-template-columns: 412px 661px; /* Widths of left and right popup respectively */
-  grid-gap: 72px; /* Optional: space between columns */
-  margin-top: 22px;
+  grid-template-columns: 329.6px 528.8px; /* Widths of left and right popup respectively */
+  grid-gap: 57.6px; /* Optional: space between columns */
+  margin-top: 17.6px;
 }
 .popup-header {
-  width: 1145px;
-  height: 127px;
-  padding-left: 20px;
+  width: 916px;
+  height: 101.6px;
+  padding-left: 16px;
   display: grid; /* Use grid layout */
   grid-template-columns: auto auto; /* Adjust the proportion as needed, auto auto splits the space */
   align-items: center; /* Vertically center all items */
   justify-content: space-between; /* Adjust the space between the two sections */
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .popup-header-text {
-  font-size: 32px;
+  font-size: 25.6px;
 }
 
 .left-popup {
-  width: 412px;
-  height: 1113px;
+  width: 329.6px;
+  height: 890.4px;
   display: grid;                /* Set the display to grid */
   place-items: center;          /* Shortcut to align items centrally both horizontally and vertically */
-  grid-gap: 10px;  
   background-color: #FBFBFB;  
-  border-radius: 12px;
+  border-radius: 9.6px;
 }
 
 .right-popup {
-  width: 661px;
-  height: 1113px;
+  width: 528.8px;
+  height: 890.4px;
   display: grid;                    /* Using grid layout */
   grid-template-rows: auto 1fr auto; /* Three rows: for the content, spacing, and the button */
   grid-template-columns: 100%;      /* Full width */
   place-items: center;              /* Center items horizontally */
   background-color: #FBFBFB;  
-  border-radius: 12px;
+  border-radius: 9.6px;
 }
 
 .content-text {
-  width: 603px;
-  height: 554px;
+  width: 482.4px;
+  height: 443.2px;
   justify-self: center; 
 }
 
@@ -681,63 +679,63 @@ cursor: pointer;
 
 .popup-event-pic {
     grid-area: 1 / 1 / 2 / 2; /* Covers the entire grid */
-    border-radius: 15px;
+    border-radius: 12px;
 }
 
 .payment-icon {
     position: absolute; /* Positioned absolutely within relative container */
-    right: 25px; /* Place it 10px from the right edge */
-    top: 10px; /* Place it 10px from the bottom edge */
+    right: 20px; /* Place it 10px from the right edge */
+    top: 8px; /* Place it 10px from the bottom edge */
     z-index: 10; /* Ensure it's on top */
 }
 
 .popup-header-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates three equal columns */
-  gap: 29px; /* Adds a 29px gap between each icon */
+  gap: 23.2px; /* Adds a 29px gap between each icon */
   justify-content: center; /* Center the icons as a group (if there's extra space) */
   align-items: center; /* Vertically centers the icons */
 }
 
 .popup-header .popup-header-icons {
-  margin-right: 39px;
+  margin-right: 31.2px;
 }
 
 .left-popup-age-name {
-width: 384px;
-height: 132px;
+  width: 307.2px;
+  height: 105.6px;
+  padding-left: 7.2px;
 }
 
 
 .left-popup-interestcategory {
   display: grid;
-  grid-template-rows: 40px;
-  width: 384px;
-  height: 157px;
+  grid-template-rows: 32px;
+  width: 307.2px;
+  height: 125.6px;
 }
 
 .left-popup-price {
-  width: 384px;
-  height: 123px;
+  width: 307.2px;
+  height: 98.4px;
 }
 
 .left-popup-number-text-attending {
-width: 384px;
-height: 150px;
+  width: 307.2px;
+  height: 120px;
 }
 
 .left-popup-adress {
-display: grid;
-width: 384px;
-height: 449px;
-justify-content: start; /* Center the icons as a group (if there's extra space) */
-align-items: start; /* Vertically centers the icons */
+  display: grid;
+  width: 307.2px;
+  height: 359.2px;
+  justify-content: start; /* Center the icons as a group (if there's extra space) */
+  align-items: start; /* Vertically centers the icons */
 }
 
 .map {
-    width: 354px;
-    height: 356px;
-    margin-left: 9px;
+    width: 283.2px;
+    height: 284.8px;
 }
 
 .left-popup-age-name, .left-popup-interestcategory, .left-popup-price, .left-popup-number-text-attending, .left-popup-adress {
@@ -746,21 +744,20 @@ margin: 0 auto; /* Centers horizontally */
 
 .left-popup-age-name {
 display: grid;
-grid-template-columns: 128px auto; /* 1fr takes remaining space, auto takes space as needed by content */
-gap: 5px; /* Adjust the gap as needed */
+grid-template-columns: 102.4px auto; /* 1fr takes remaining space, auto takes space as needed by content */
+gap: 4px; /* Adjust the gap as needed */
 align-items: center; /* Align items vertically in the center */
-width: 384px;
-height: 132px;
-margin: 0 auto; /* Center horizontally */
+width: 307.2px;
+height: 105.6px;
 }
 
 .age-icon-number {
 display: grid;
-grid-template-columns: 16px auto; /* Allocates enough space for the icon and the number based on their content */
-gap: 5px; /* Sets a 5px gap between the grid items */
+grid-template-columns: 12.8px auto; /* Allocates enough space for the icon and the number based on their content */
+gap: 4px; /* Sets a 5px gap between the grid items */
 align-items: center; /* Vertically centers the items in their row */
 justify-content:start;
-padding-left: 2px;
+padding-left: 1.6px;
 }
 
 .name {
@@ -771,12 +768,12 @@ justify-content: start; /* Aligns content to the start horizontally */
 
 .garn-box {
   display: grid;
-  border-radius: 60px;
+  border-radius: 48px;
   border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
-  width: 85px;
-  height: 35px;
+  width: 68px;
+  height: 28px;
   align-content: center;
-  font-size: 15px;
+  font-size: 12px;
   color: #4D4D4F;
 }
 
@@ -784,39 +781,39 @@ justify-content: start; /* Aligns content to the start horizontally */
   display: grid;
   border-radius: 60px;
   border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
-  width: 78px;
-  height: 35px;
+  width: 62.4px;
+  height: 28px;
   align-content: center;
-  font-size: 15px;
+  font-size: 12px;
   color: #4D4D4F;
 }
 
 .bekendtskaber-box {
   display: grid;
-  border-radius: 60px;
+  border-radius: 48px;
   border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
-  width: 168px;
-  height: 35px;
+  width: 134.4px;
+  height: 28px;
   align-content: center;
-  font-size: 15px;
+  font-size: 12px;
   color: #4D4D4F;
 }
 
 .får-box {
   display: grid;
-  border-radius: 60px;
+  border-radius: 48px;
   border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
-  width: 70px;
-  height: 35px;
+  width: 56px;
+  height: 28px;
   align-content: center;
-  font-size: 15px;
+  font-size: 12px;
   color: #4D4D4F;
 }
 
 .interestcategory-box {
-  width: 277px;
-  height: 114px;
-  margin-left: 9px;
+  width: 221.6px;
+  height: 91.2px;
+  margin-left: 7.2px;
 }
 
 .row1 {
@@ -825,10 +822,10 @@ justify-content: start; /* Aligns content to the start horizontally */
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-template-rows: 40px;
-  grid-template-columns: 87px 80px;
-  padding-top: 17px;
-  column-gap: 6px;
+  grid-template-rows: 32px;
+  grid-template-columns: 69.6px 64px;
+  padding-top: 13.6px;
+  column-gap: 4.8px;
 }
 
 .row2 {
@@ -837,31 +834,32 @@ justify-content: start; /* Aligns content to the start horizontally */
   grid-row-end: 2;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-template-rows: 47px;
-  grid-template-columns: 170px 72px;
-  padding-top: 10px;
-  column-gap: 6px;
+  grid-template-rows: 37.6px;
+  grid-template-columns: 136px 57.6px;
+  padding-top: 8px;
+  column-gap: 4.8px;
 }
 
 .popup-interestcategory {
   display: grid;
-  height: 22px;
+  height: 17.6px;
   justify-content: start; /* Aligns content to the start horizontally */
-  margin-left: 9px;
+  margin-left: 7.2px;
 }
 
 .left-popup-price-top {
   text-align: start;  /* Aligns text to the start vertically */ 
-  height: 15px;
-  margin-left: 9px;
+  height: 12px;
+  margin-left: 7.2px;
 }
 
 .left-popup-price-bottom {
-  width: 340px;
+  width: 272px;
   text-align: start;  /* Aligns text to the start vertically */ 
-  margin-bottom: 15px; 
+  margin-bottom: 12px; 
   color: #4D4D4F;
-  margin-left: 9px;
+  margin-left: 7.2px;
+  font-size: 12.8px;
 }
 
 .left-popup-number-text-attending {
@@ -870,13 +868,13 @@ justify-content: start; /* Aligns content to the start horizontally */
 
 .number-text-attending {
   display: grid;
-  margin-left: 9px;
-  grid-template-rows: 40px 40px 40px;
+  margin-left: 7.2px;
+  grid-template-rows: 32px 32px 32px;
 }
 
 .left-popup-adress-text {
   text-align: start;
-  margin-left: 9px;
+  margin-left: 7.2px;
 }
 
 .adress-time {
@@ -888,15 +886,31 @@ justify-content: start; /* Aligns content to the start horizontally */
 }
 
 .intro-text {
-  width: 580px;
-  line-height: 25px;
+  width: 464px;
+  line-height: 20px;
 }
 
 .popup-line {
   grid-column: 1 / -1; /* Extend line across all columns */
-  width: 1185px; /* Set the specific width */
-  height: 1px; /* As specified */
+  width: 948px; /* Set the specific width */
+  height: 0.8px; /* As specified */
   background-color: #31572C; /* Assuming the line should be green */
   justify-self: center; /* Center the line horizontally within the grid column */
-  margin-left: -20px;
+  margin-left: -16px;
+}
+
+.left-popup-profile {
+  margin-left: 10px;
+}
+
+.popup-modal {
+  display: none; /* Skjul modal som standard if we want it infront to begin with write 'block' */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Baggrundsfarve og gennemsigtighed */
 }
