@@ -197,7 +197,8 @@
 }
 
 .bio-tekst {
-    display: grid;
+    height: 101px;
+    line-height: 12px;
     gap: -40px;
 }
 /*Interesser */
