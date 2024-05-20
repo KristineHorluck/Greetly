@@ -242,7 +242,8 @@
 }
 
 .sport-og-motion-category:hover {
-
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 .natur-category {
@@ -257,6 +258,11 @@
     place-items: center;              /* Center items horizontally */
 }
 
+.natur-category:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .krea-category {
     display: grid;
     border-radius: 48px;
@@ -269,6 +275,11 @@
     place-items: center;              /* Center items horizontally */ 
 }
 
+.krea-category:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 /* Arrangeret af dig */
 .arrangeret-container{
     background-color: rgb(24, 128, 128);
@@ -278,29 +289,62 @@
 .arrangeret-container {
     display: grid;
     grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
-    grid-gap: 20px; /* Gap between grid items */
+    column-gap: 20px; /* Gap between grid items */
+    padding-left: 20px;
+    color: #393939;
 }
 /* Favoritter */
 .favoritter-container{
     background-color: rgb(80, 59, 100);
     margin-bottom: 30px;
     border-radius: 10px;
+    color: #393939;
 }
 .favoritter-container {
     display: grid;
     grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
-    grid-gap: 20px; /* Gap between grid items */
+    column-gap: 20px; /* Gap between grid items */
+    padding-left: 20px;
 }
+
+/* Interesser tekst info halløj */
+.date {
+    font-size: 10px;
+    color: #717171;
+    padding-bottom: 19px;
+}
+
+.event-discription {
+    font-size: 22px;
+    color:#393939;
+    padding-bottom: 11px;
+}
+
+.address {
+    font-size: 10px;
+    color:#393939;
+    padding-bottom: 28px;
+}
+
+.beskrivelse {
+    font-size: 10px;
+    background: linear-gradient(180deg,#717171 0%, #A9A9A9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* Deltager i */
 .deltager-container{
     background-color: rgb(250, 180, 114);
     border-radius: 10px;
+    color: #393939;
 }
 .deltager-container {
     display: grid;
     grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
-    grid-gap: 20px; /* Gap between grid items */
+    column-gap: 20px; /* Gap between grid items */
+    padding-left: 20px;
 }
 
 .left-side {
@@ -311,6 +355,7 @@
 .right-side {
     grid-column: 2; /* Place the right side in the second column */
     background-color: antiquewhite;
+    width: 1000px;
 }
 
 

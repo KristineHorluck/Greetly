@@ -21,3 +21,4 @@ describe('MyPageComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
