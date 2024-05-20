@@ -238,6 +238,35 @@
     align-content: center;
     font-size: 14px;
     color: #4D4D4F;
+    place-items: center;              /* Center items horizontally */
+}
+
+.sport-og-motion-category:hover {
+
+}
+
+.natur-category {
+    display: grid;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 74px;
+    height: 35px;
+    align-content: center;
+    font-size: 14px;
+    color: #4D4D4F;
+    place-items: center;              /* Center items horizontally */
+}
+
+.krea-category {
+    display: grid;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 65px;
+    height: 35px;
+    align-content: center;
+    font-size: 14px;
+    color: #4D4D4F;
+    place-items: center;              /* Center items horizontally */ 
 }
 
 /* Arrangeret af dig */
