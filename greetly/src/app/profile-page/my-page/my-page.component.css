@@ -32,7 +32,7 @@
 }
 .side h1{
     margin-top: 0px;
-    font-family: calibri;
+    font-family: sans-serif;
     font-weight: 700;
 }
 
@@ -51,13 +51,12 @@
     height: 30px;
     font-size: 15px;
     margin-top: -10px;
-    
 }
 
 .velkommen h2 {
     margin-top: 0;
     margin-left: 3px;
-    font-family: calibri;
+    font-family: sans-serif;
     font-style: italic;
     font-weight: 100;
 }
@@ -96,7 +95,7 @@
     margin-left: 25px;
     margin-top: 50px;
     font-size: 30px;
-    font-family: calibri;
+    font-family: sans-serif;
 }
 
 .line-profil-box{
@@ -120,7 +119,7 @@
     margin-left: 25px;
     margin-bottom: 40px;
     width: 450px;
-
+    color: #4D4D4F;
 }
 
 .vertical-line {
@@ -141,6 +140,7 @@
     margin-left: 25px;
     width: 450px;
     height: 40px;
+    color: #4D4D4F;
 }
 
 
@@ -161,12 +161,13 @@
 .år-24 {
     margin-top: -2px;
     margin-left: 77px;
+    color: #4D4D4F;
 }
 
 .adresse-9000 {
     margin-top: -2px;
     margin-left: 103px;
-    
+    color: #4D4D4F;
 }
 
 .birthday-cake-icon {
@@ -190,6 +191,7 @@
     margin-top: -140px;
     padding-bottom: 10px;
     gap: 5px;
+    color: #4D4D4F;
 }
 
 .biograf {
@@ -215,7 +217,7 @@
 
 .interesser-heading {
     margin-left: 20px;
-    font-weight: 300;
+    font-family: sans-serif;
 }
 
 .interesser-buttons {
@@ -225,7 +227,7 @@
     gap: 10px;
     width: 300px;
     margin-left: 20px;
-
+    font-size: 14px;
 }
 
 /* Arrangeret af dig */
