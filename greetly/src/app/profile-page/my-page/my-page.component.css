@@ -220,14 +220,24 @@
     font-family: sans-serif;
 }
 
-.interesser-buttons {
+.interesser-category {
     display: grid;
     margin-top: 15px;
     grid-template-columns: repeat(3, auto);
     gap: 10px;
     width: 300px;
     margin-left: 20px;
+}
+
+.sport-og-motion-category {
+    display: grid;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 128px;
+    height: 35px;
+    align-content: center;
     font-size: 14px;
+    color: #4D4D4F;
 }
 
 /* Arrangeret af dig */
