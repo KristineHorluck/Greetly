@@ -309,28 +309,31 @@
 
 /* Interesser tekst info halløj */
 .date {
-    font-size: 10px;
+    font-size: 12px;
     color: #717171;
-    padding-bottom: 19px;
+    padding-bottom: 15px;
 }
 
 .event-discription {
-    font-size: 22px;
+    font-size: 24px;
     color:#393939;
-    padding-bottom: 11px;
+    padding-bottom: 10px;
+    font-weight: bold;
 }
 
 .address {
-    font-size: 10px;
+    font-size: 12px;
     color:#393939;
-    padding-bottom: 28px;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .beskrivelse {
-    font-size: 10px;
+    font-size: 12px;
     background: linear-gradient(180deg,#717171 0%, #A9A9A9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    line-height: 18px;
 }
 
 
@@ -350,13 +353,49 @@
 .left-side {
     grid-column: 1; /* Place the left side in the first column */
     background-color: rgb(179, 179, 247);
+    margin-bottom: 25px;
 }
 
 .right-side {
     grid-column: 2; /* Place the right side in the second column */
     background-color: antiquewhite;
     width: 1000px;
+    margin-bottom: 25px;
 }
+
+.overskrift-and-knap {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-template-columns: 221px 1020px;
+}
+
+.se-alle-container {
+    display: grid;
+    align-items: center; /* Optional: to vertically center align items */
+    justify-content: end;
+}
+
+.se-alle-container:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.se-alle {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 109px;
+    height: 35px;
+    font-size: 12px;
+    font-size: 15px;
+    color:#31572C;
+}
+
 
 
 
