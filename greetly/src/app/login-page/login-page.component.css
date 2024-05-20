@@ -39,16 +39,7 @@ input[type=text], input[type=password], button {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-button {
-  background-color: #31572C; 
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-}
-button:hover {
-  opacity: 0.8;
-}
+
 button:hover {
   opacity: 0.8;
 }
