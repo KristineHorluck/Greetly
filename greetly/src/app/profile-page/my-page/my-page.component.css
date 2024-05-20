@@ -42,8 +42,27 @@
 }
 
 .rediger-profil-icon {
+    display: grid;
+    grid-template-columns: 22px auto; /* Ensure the first column is for the icon and the second is for the text */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     margin-top: -55px;
     margin-left: 1150px;
+    font-size: 15px;
+    color: #31572C;
+    border-radius: 48px;
+    border: 1px solid #31572C;
+    width: 150px;
+    height: 35px;
+}
+
+.rediger-profil-icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.rediger-icon {
+    margin-top: 4px;
 }
 
 .velkommen{
@@ -396,7 +415,15 @@
     color:#31572C;
 }
 
-
+.container-line {
+    margin-bottom: 20px;
+    grid-column: 1 / -1; /* Extend line across all columns */
+    width: 1241px; /* Set the specific width */
+    height: 1px; /* As specified */
+    background-color: #31572C; /* Assuming the line should be green */
+    justify-self: start; /* Center the line horizontally within the grid column */
+    margin-bottom: -20px;
+}
 
 
 
