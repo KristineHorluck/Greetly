@@ -82,6 +82,10 @@ button:hover {
   cursor: pointer;
 }
 
+input[type="text"], input[type="password"], input[type="date"]{
+  border-radius: 4px;
+}
+
 input[type="checkbox"] {
     cursor: pointer;
   }
