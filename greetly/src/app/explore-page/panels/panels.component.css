@@ -5,9 +5,9 @@
     padding-top: 17px;
     grid-row-start: 1;
     grid-row-end: 2;
-    grid-template-columns:22.36% auto;
+    grid-template-columns:22.36% 75.98%; /* 322px/1440px */ /* (22.36+1.66)/100px */
     grid-template-rows: 100px 1600px; /* change rows to move footer*/
-    column-gap: 1.66%;
+    column-gap: 1.66%; /* 24px/1050px */
 }
 
 .left-panel {
@@ -47,7 +47,7 @@
     align-items: center;
     border-radius: 30px;
     background-color: rgb(221, 226, 219);
-    width: 283px;
+    width: 91.3%; /* 294px/322*/
     height: 27px;
     box-sizing: border-box;
     height: 27px; /* Ensure this is enough after padding is considered */
@@ -62,11 +62,11 @@
     outline: none;
     border: none;
     background-color: transparent;
-    width: 283px;
+    width: 91.3%; /* 294px/322*/
     height: 27px;
     box-sizing: border-box;
     height: 27px; /* Ensure this is enough after padding is considered */
-    padding: 10px; /* Example padding that fits within the height */
+    padding: 3.1%; /* 10/322*//* Example padding that fits within the height */
 }
 
 /* added left marging because padding-left didn't work */
@@ -76,7 +76,7 @@
 
 .categories{
     padding-top: 15px;
-    padding-left: 10px;
+    padding-left: 3.1%; /* 10/322*/
     font-size: 24px;
     color: #3e3e3e;
     height: 245px;
@@ -91,14 +91,14 @@
 .create-button-link {
     justify-content: center;
     align-items: center;
-    width: 293px;
+    width: 97.01%; /* 293px/302px(create button) */
     height: 56px;
     color: #fbfbfb;
     text-decoration: none; /* Optional: Removes underline from links */
     font-size: 20px;
     background-color: #31572C; /* wtf hvorfor skifter den ikke farve*/
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 3.1%; /* 10/322*/
     border: 2px solid #31572C;
 }
 
@@ -124,6 +124,7 @@
 
 .friends-pic {
     padding-left: 10px;
+    width: 91.3%; /* 294px/322*/
 }
 
 .your-events {
