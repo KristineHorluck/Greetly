@@ -43,6 +43,14 @@ input[type=text], input[type=password], button {
 button:hover {
   opacity: 0.8;
 }
+
+button {
+  border-radius: 8px; 
+  background-color: #31572C;
+  color: white;
+}
+
+
 /* opret bruger pop-up styles */
 .modal {
   display: none;
