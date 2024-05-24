@@ -1,0 +1,419 @@
+.min-side{
+    width: 1420px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+/* Min Side */
+.profil-container{
+    height: 400px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+/*Min side - header + tekst */
+.profil-header{
+    display: grid;
+    grid-template-rows: 30px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-gap: 20px;
+    height: 70px;
+
+}
+.side{
+    display: grid;
+    font-size: 20px;
+    margin-top: 0px;
+    height: 40px
+   
+}
+.side h1{
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.badges {
+    margin-top: -50px;
+    margin-left: 890px;
+}
+
+.rediger-profil-icon {
+    display: grid;
+    grid-template-columns: 22px auto; /* Ensure the first column is for the icon and the second is for the text */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: -55px;
+    margin-left: 1150px;
+    font-size: 15px;
+    color: #31572C;
+    border-radius: 48px;
+    border: 1px solid #31572C;
+    width: 150px;
+    height: 35px;
+}
+
+.rediger-profil-icon:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.rediger-icon {
+    margin-top: 4px;
+}
+
+.velkommen{
+    display: grid;
+    height: 30px;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.velkommen h2 {
+    margin-top: 0;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.line-profil-header {
+   border: none;
+   height: 1px;
+   background-color: #31572C;
+   width: 100%;
+   margin-top: -15px;
+}
+
+.side {
+    margin-left: 5px;
+}
+
+/*Profile box -> for profile picture and info about the user*/
+.profil-box {
+    display: grid;
+    grid-template-columns: 174px auto; /* The size of the profile picture and the rest of the space */
+    gap: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 180px; 
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 1224px;
+}
+
+.profil-img {
+    width: 100%;
+    height: auto;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.name h3{
+    margin-left: 25px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.line-profil-box{
+    border: none;
+    height: 1px;
+    background-color: #31572C;
+    width: 451px;
+    margin-top: -100px;
+    margin-left: 203px;
+}
+
+/*Stats box with categories and numbers*/
+.stats-box {
+    display: grid;
+    grid-template-columns: repeat(4, auto); /* Adjust the number of columns based on the number of items */
+    gap: 1px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -90px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    width: 450px;
+    color: #4D4D4F;
+}
+
+.vertical-line {
+    border-left: 1px solid #31572C; /* Adjust thickness and color */
+    height: 98px; /* Adjust height */
+    margin-top: -118px;
+    margin-left: 672px;
+}
+
+.number-box {
+    display: grid;
+    grid-template-columns: 77.97px 124.77px 114.7px 129.56px; /* adjusted to the sizes from stats-box */
+    gap: 1px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -60px;
+    margin-left: 25px;
+    width: 450px;
+    height: 40px;
+    color: #4D4D4F;
+}
+
+
+
+/*Adresse og fødselsdag*/
+
+.år-adresse {
+    display: grid;
+    grid-template-columns: 11px auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -135px;
+    margin-left: 325px;
+    width: 150px;
+    height: 30px;
+}
+
+
+.år-24 {
+    margin-top: -2px;
+    margin-left: 77px;
+    color: #4D4D4F;
+}
+
+.adresse-9000 {
+    margin-top: -2px;
+    margin-left: 103px;
+    color: #4D4D4F;
+}
+
+.birthday-cake-icon {
+    width: 100%;
+    height: auto;
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 62px;
+    margin-left: 563px;
+}
+
+/*Biografi */
+.biografi-box {
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 410px;
+    height: 101px;
+    margin-left: 510px;
+    margin-top: -140px;
+    padding-bottom: 10px;
+    gap: 5px;
+    color: #4D4D4F;
+}
+
+.biograf {
+    height: 20px;
+    font-weight: bold;
+}
+
+.bio-tekst {
+    height: 101px;
+    line-height: 12px;
+    gap: -40px;
+}
+/*Interesser */
+
+.interesser-box {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 300px;
+    margin-left: 20px;
+    
+}
+
+.interesser-heading {
+    margin-left: 20px;
+    font-family: sans-serif;
+}
+
+.interesser-category {
+    display: grid;
+    margin-top: 15px;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.sport-og-motion-category {
+    display: grid;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 128px;
+    height: 35px;
+    align-content: center;
+    font-size: 14px;
+    color: #4D4D4F;
+    place-items: center;              /* Center items horizontally */
+}
+
+.sport-og-motion-category:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.natur-category {
+    display: grid;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 74px;
+    height: 35px;
+    align-content: center;
+    font-size: 14px;
+    color: #4D4D4F;
+    place-items: center;              /* Center items horizontally */
+}
+
+.natur-category:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.krea-category {
+    display: grid;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 65px;
+    height: 35px;
+    align-content: center;
+    font-size: 14px;
+    color: #4D4D4F;
+    place-items: center;              /* Center items horizontally */ 
+}
+
+.krea-category:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Arrangeret af dig */
+.arrangeret-container{
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.arrangeret-container {
+    display: grid;
+    grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
+    column-gap: 20px; /* Gap between grid items */
+    padding-left: 20px;
+    color: #393939;
+}
+/* Favoritter */
+.favoritter-container{
+    margin-bottom: 30px;
+    border-radius: 10px;
+    color: #393939;
+}
+.favoritter-container {
+    display: grid;
+    grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
+    column-gap: 20px; /* Gap between grid items */
+    padding-left: 20px;
+}
+
+/* Interesser tekst info halløj */
+.date {
+    font-size: 12px;
+    color: #717171;
+    padding-bottom: 15px;
+}
+
+.event-discription {
+    font-size: 24px;
+    color:#393939;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.address {
+    font-size: 12px;
+    color:#393939;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.beskrivelse {
+    font-size: 12px;
+    background: linear-gradient(180deg,#717171 0%, #A9A9A9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 18px;
+}
+
+
+/* Deltager i */
+.deltager-container{
+    border-radius: 10px;
+    color: #393939;
+}
+.deltager-container {
+    display: grid;
+    grid-template-columns: 221px auto; /* Two columns, first one takes auto width, second one takes auto width */
+    column-gap: 20px; /* Gap between grid items */
+    padding-left: 20px;
+}
+
+.left-side {
+    grid-column: 1; /* Place the left side in the first column */
+    margin-bottom: 25px;
+}
+
+.right-side {
+    grid-column: 2; /* Place the right side in the second column */
+    width: 1000px;
+    margin-bottom: 25px;
+}
+
+.overskrift-and-knap {
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start: 1;
+    grid-column-end:3;
+    grid-template-columns: 221px 1020px;
+}
+
+.se-alle-container {
+    display: grid;
+    align-items: center; /* Optional: to vertically center align items */
+    justify-content: end;
+}
+
+.se-alle-container:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.se-alle {
+    display: grid;
+    text-align: center;
+    align-content: center;
+    border-radius: 48px;
+    border: 1px solid #31572C; /* px og solid skal stå så border kommer frem */
+    width: 109px;
+    height: 35px;
+    font-size: 12px;
+    font-size: 15px;
+    color:#31572C;
+}
+
+.container-line {
+    margin-bottom: 20px;
+    grid-column: 1 / -1; /* Extend line across all columns */
+    width: 1241px; /* Set the specific width */
+    height: 1px; /* As specified */
+    background-color: #31572C; /* Assuming the line should be green */
+    justify-self: start; /* Center the line horizontally within the grid column */
+    margin-bottom: -20px;
+}
+
+
+
