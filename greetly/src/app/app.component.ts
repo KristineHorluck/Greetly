@@ -1,7 +1,7 @@
 
 import { Component, ElementRef, viewChild } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
-import { RouterLink, RouterLinkActive, RouterOutlet, Router } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './explore-page/navbar/navbar.component';
 import { PanelsComponent } from './explore-page/panels/panels.component';
@@ -16,7 +16,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, LoginPageComponent, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [CommonModule, LoginPageComponent, MatButtonModule, NavbarComponent, FooterComponent ,PanelsComponent, PanelLeftComponent, ScrollBarComponent, PanelRightComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -24,9 +24,4 @@ export class AppComponent {
   title = 'greetly';
   isLoggedIn = true;
 
-  constructor(private router: Router) {}
-
-  getCurrentRoute() {
-    return this.router.url;
-  }
 }
