@@ -1,6 +1,6 @@
-<ng-container *ngIf="isLoggedIn; else login">
+<ng-container *ngIf="true; else login">
 
-<app-navbar></app-navbar>
+<app-navbar *ngIf="getCurrentRoute() !== '/'"></app-navbar>
 
 
 <!-- <app-panels></app-panels>
@@ -8,7 +8,7 @@
 
 <router-outlet></router-outlet>
 
-<app-footer></app-footer>
+<app-footer *ngIf="getCurrentRoute() !== '/'"></app-footer>
 </ng-container>
 
 <ng-template #login>
