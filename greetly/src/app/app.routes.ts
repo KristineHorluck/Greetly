@@ -8,6 +8,7 @@ import { FAQComponent } from './Blackbox/faq/faq.component';
 import { PoliticsComponent } from './Blackbox/politics/politics.component';
 import { RulesComponent } from './Blackbox/rules/rules.component';
 import { PanelsComponent } from './explore-page/panels/panels.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 
 
@@ -21,5 +22,7 @@ export const routes: Routes = [
     {'path': 'politics', component:PoliticsComponent},
     {'path': 'rules', component:RulesComponent},  
     {'path': 'panels', component:PanelsComponent},
-    {'path': '**', component:PanelsComponent},
+    /* {'path': 'login', component:LoginPageComponent}, */
+    {'path': '**', component:LoginPageComponent},
+    
 ];
