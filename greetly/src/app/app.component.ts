@@ -22,5 +22,5 @@ import { LoginPageComponent } from './login-page/login-page.component';
 })
 export class AppComponent {
   title = 'greetly';
-  isLoggedIn = false;
+  isLoggedIn = true;
 }
