@@ -11,7 +11,7 @@
     <img src="assets/greetly-logo-big.png" alt="logo" style="width: 350px; height: auto;">
   </div>
   
-  <form action="/login" method="post" class="container" style="width: 350px;">
+  <form action="/panels" method="post" class="container" style="width: 350px;">
     <input type="text" placeholder="Brugernavn" name="username" id="username" required style="border-radius: 8px;">
     <input type="password" placeholder="Kodeord" name="password" id="password" required style="border-radius: 8px;">
     <button type="submit" style="border-radius: 8px; background-color: #31572C;">Login</button>
@@ -20,17 +20,17 @@
       </label>
     <label style="display: block; border-bottom: 1px solid black;"></label>
     <!-- opret bruger knap -->
-    <button onclick="document.getElementById('id03').style.display='block'" style="border-radius: 8px; background-color: #31572C; width: 50%;">Opret bruger</button>
+    <button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 8px; background-color: #31572C; width: 50%;">Opret bruger</button>
     <span class="psw">Glemt <a href="#">adgangskode?</a></span>
   </form>
 </div>
 <img src="assets/step-by-step.png" alt="step-by-step" style="width: 65%; display: block; margin: 0 auto; padding-bottom: 200px;">
 
 <!-- opret bruger pop-up -->
-<div id="id03" class="modal">
+<div id="id01" class="modal">
   <div class="flex-container" style="padding-bottom: 200px;">
   <div class="modal-content">
-    <span class="close" onclick="document.getElementById('id03').style.display='none'">&times;</span>
+    <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
     <h1>Opret bruger</h1>
     <hr>
     <form action="/action_page.php" class="modal-form"> <!-- udfyld felter opret bruger -->
@@ -52,7 +52,7 @@
         
   <!-- Har du allerede en konto? knap -->
       <div class="botton-container">
-        <button type="button" onclick="document.getElementById('id03').style.display='none'" style="opacity: 0.7;" class="cancelbtn">Har du allerede et login?</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" style="opacity: 0.7;" class="cancelbtn">Har du allerede et login?</button>
       </div>
       </div>
     </form>

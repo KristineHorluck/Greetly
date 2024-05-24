@@ -529,6 +529,10 @@ label {
   display: block; /* Viser label som et blokelement */
   margin-bottom: 4px; /* Afstand under label */ }
 
+.psw {
+display: block; /* Ændrer til blok for at stå på sin egen linje */
+}
+
 /* Global styles */
 body {
 font-family: Arial, sans-serif;
