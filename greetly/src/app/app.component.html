@@ -1,10 +1,14 @@
 <ng-container *ngIf="true; else login">
 
 <app-navbar></app-navbar>
-<app-panels></app-panels>
-<app-footer></app-footer>
+
+
+<!-- <app-panels></app-panels>
+ -->
 
 <router-outlet></router-outlet>
+
+<app-footer></app-footer>
 </ng-container>
 
 <ng-template #login>
