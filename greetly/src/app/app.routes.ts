@@ -22,7 +22,8 @@ export const routes: Routes = [
     {'path': 'politics', component:PoliticsComponent},
     {'path': 'rules', component:RulesComponent},  
     {'path': 'panels', component:PanelsComponent},
-    /* {'path': 'login', component:LoginPageComponent}, */
+    {'path': 'login', component:LoginPageComponent},
+    {path: '', redirectTo: '/login', pathMatch: 'full'},
     {'path': '**', component:LoginPageComponent},
     
 ];
