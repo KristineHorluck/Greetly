@@ -1,3 +1,4 @@
+
 label {
     display: block; /* Viser label som et blokelement */
     text-align: center; /* Venstrestiller teksten i label */
@@ -39,12 +40,6 @@ input[type=text], input[type=password], button {
   box-sizing: border-box;
 }
 
-button {
-  border-radius: 8px; 
-  background-color: #31572C;
-  color: white;
-}
-
 button:hover {
   opacity: 0.8;
 }
@@ -81,5 +76,3 @@ button:hover {
 input[type="checkbox"] {
     cursor: pointer;
   }
-
-  
