@@ -39,19 +39,18 @@ input[type=text], input[type=password], button {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
+button:hover {
+  opacity: 0.8;
+}
+
 button {
-  background-color: #31572C; 
+  border-radius: 8px; 
+  background-color: #31572C;
   color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
 }
-button:hover {
-  opacity: 0.8;
-}
-button:hover {
-  opacity: 0.8;
-}
+
+
 /* opret bruger pop-up styles */
 .modal {
   display: none;

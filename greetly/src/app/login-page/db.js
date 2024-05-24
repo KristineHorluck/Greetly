@@ -1,19 +1,14 @@
-// Importér mysql2-modulet ved hjælp af require-syntaksen
+// Code that connects to mySQL and query to the database
 import mysql from 'mysql2'
 
-// Opret en pool af forbindelser til databasen
+
 const pool = mysql.createPool({
     host: 'localhost',
     user: 'brugernavn',
-    password: 'kode',
-    database: 'login_info' 
-}).promise();
+    password: 'kode', // Din egen adgangskode (til serveren)
+    database: 'login_info' // Ændre hvis din database hedder noget andet
+}).promise()
 
-// Udfør en SQL-forespørgsel
-pool.query("SELECT * FROM login")
-    .then((result) => {
-        console.log(result[0]); // Udskriv resultatet af forespørgslen
-    })
-    .catch((error) => {
-        console.error('Fejl ved udførelse af forespørgsel:', error); // Hvis der opstår en fejl
-    });
+
+const result = await pool.query("SELECT * FROM login") // Min table hedder login, ændrer hvis du har kaldt den noget andet.
+console.log(result)

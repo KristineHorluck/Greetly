@@ -8,6 +8,7 @@ import { ContactComponent } from './Blackbox/contact/contact.component';
 import { FAQComponent } from './Blackbox/faq/faq.component';
 import { PoliticsComponent } from './Blackbox/politics/politics.component';
 import { RulesComponent } from './Blackbox/rules/rules.component';
+import { AppComponent } from './app.component';
 
 
 
